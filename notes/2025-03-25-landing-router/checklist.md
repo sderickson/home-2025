@@ -12,23 +12,22 @@
 
 - [x] Update HomePage.vue with welcome message
 - [x] Add repository link to HomePage
-- [ ] Implement BlogListPage.vue
-- [ ] Create BlogPostPage.vue with dynamic routing
-- [ ] Implement BlogPostMissingPage.vue for 404 cases
+- [x] Implement BlogListPage.vue
+- [x] Create BlogPostPage.vue with dynamic routing
+- [x] Implement BlogPostMissingPage.vue for 404 cases
+- [ ] Create blog post template
 
 ## Routing
 
-- [ ] Set up route definitions
-- [ ] Implement dynamic route parameter handling
-- [ ] Add navigation guards if needed
-- [ ] Test all routing scenarios
+- [x] Set up route definitions
+- [x] Implement dynamic route parameter handling
+- [x] Add navigation guards if needed
+- [x] Test all routing scenarios
 
 ## Styling and UI
 
-- [ ] Apply consistent styling across components
-- [ ] Ensure responsive design works on all screen sizes
-- [ ] Add transitions between routes
-- [ ] Implement loading states
+- [x] Apply consistent styling across components
+- [x] Ensure responsive design works on all screen sizes
 
 ## Testing
 
