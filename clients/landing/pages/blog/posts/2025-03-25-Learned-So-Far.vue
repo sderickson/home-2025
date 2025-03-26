@@ -12,34 +12,37 @@
 
     <p>
       <strong>To form my own opinions</strong>. At the end of last year, I
-      didn't have a high opinion, but I also didn't have much of a strong one.
-      LLM-powered AI had not made its way into my day-to-day in work or at home,
-      there were no products where I was like "I'm really glad they put AI
-      here", and very few of the engineers I knew were super jazzed about using
-      it to code. But I was also fairly distracted by all the responsibilities
-      of work and home. Now I'm taking a sabbatical with the aim to come out
-      retooled and opinionated.
+      didn't have a high opinion of AI, but I also didn't have much of a strong
+      one. LLM-powered AI hadn't made its way into my day-to-day work or home
+      life, and I hadn't encountered any products where I thought "I'm really
+      glad they put AI here." Even among the engineers I knew, few were that
+      enthused about using it for coding. But I was also fairly distracted by
+      work and home responsibilities. Now I'm taking a sabbatical with the aim
+      to come out retooled and opinionated.
     </p>
 
-    <p>There are three opinions I want to form:</p>
+    <p>I want to form three key opinions:</p>
 
     <ul>
       <li>
-        <strong>How should AI be used in software development?</strong>
+        <strong>The role of AI in software development</strong>: How can we
+        leverage AI to write better code, faster, while maintaining quality?
       </li>
       <li>
-        <strong>How should AI be used in business processes?</strong>
+        <strong>The role of AI in business processes</strong>: Where can AI
+        meaningfully improve efficiency while managing new problems?
       </li>
       <li>
-        <strong>How should AI be used in products?</strong>
+        <strong>The role of AI in products</strong>: How can we create
+        AI-powered features that users actually want and trust?
       </li>
     </ul>
 
     <p>
-      I have some other non-AI goals, too. They're things like... learn to make
-      money outside of a full-time job, consolidate what I learned about web
-      development at Dropbox, and improving my cooking and eating habits. But I
-      digress. Point is, I'll be writing on those themes.
+      I have some other non-AI goals too, like learning to make money outside of
+      a full-time job, consolidating what I learned about web development at
+      Dropbox, and improving my cooking and eating habits. But I digress. The
+      point is, I'll be writing about these themes as I explore them.
     </p>
 
     <h3>My Approach</h3>
