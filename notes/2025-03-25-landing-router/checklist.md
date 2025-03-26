@@ -10,8 +10,8 @@
 
 ### Pages
 
-- [ ] Update HomePage.vue with welcome message
-- [ ] Add repository link to HomePage
+- [x] Update HomePage.vue with welcome message
+- [x] Add repository link to HomePage
 - [ ] Implement BlogListPage.vue
 - [ ] Create BlogPostPage.vue with dynamic routing
 - [ ] Implement BlogPostMissingPage.vue for 404 cases
