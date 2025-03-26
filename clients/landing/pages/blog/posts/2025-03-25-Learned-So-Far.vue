@@ -54,7 +54,7 @@
 
     <p>
       To centralize and leverage my learnings and tools across my websites (this
-      is one's the fourth so far), I'm building
+      is the fourth so far), I'm building
       <a href="https://saf-demo.online/" target="_blank">a framework</a> called
       SAF: <strong>Scott's Application Framework</strong>. It's named that
       because it's a framework that I'm building for me,
