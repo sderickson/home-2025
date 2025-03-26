@@ -25,11 +25,10 @@ interface BlogPost {
 
 const blogPosts = ref<BlogPost[]>([
   {
-    title: "First Blog Post",
+    title: "What I've Learned So Far",
     date: "March 25, 2025",
-    excerpt:
-      "Welcome to our first blog post! This is a sample post to demonstrate the blog functionality.",
-    slug: "2025-03-25-first-post",
+    excerpt: "Three months into adopting AI, here are my takeaways so far.",
+    slug: "2025-03-25-learned-so-far",
   },
 ]);
 </script>
