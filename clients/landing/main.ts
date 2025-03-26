@@ -4,7 +4,7 @@ import { createVuetify } from "vuetify";
 import { createApp } from "vue";
 
 import App from "./LandingApp.vue";
-import router from "./router.ts";
+import { router } from "./router.ts";
 import { vuetifyConfig } from "../common/vuetify-config";
 const vuetify = createVuetify(vuetifyConfig);
 

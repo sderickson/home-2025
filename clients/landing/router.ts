@@ -6,7 +6,7 @@ import BlogPostPage from "./pages/blog/BlogPostPage.vue";
 import BlogPostMissingPage from "./pages/blog/BlogPostMissingPage.vue";
 import { blogPosts } from "./pages/blog/blog-list";
 
-const router = createRouter({
+export const router = createRouter({
   history: createWebHistory(),
   scrollBehavior(_to, _from, savedPosition) {
     if (savedPosition) {
