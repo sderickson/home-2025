@@ -1,12 +1,11 @@
 <template>
   <div>
     <p>
-      I officially inaugurate this blog with a post about AI 🤖. It's topical,
-      and as a web developer and entrepreneur, it's quite the talk of the town.
-      I've played around with it a bit at my old job but I never really got the
-      chance, or made the time, to dive into it. Now I've got time, so now it's
-      my main focus. I've only begun making an acquaintance, but I want to start
-      this blog now while my thoughts are still evolving.
+      I inaugurate this blog with a post about AI 🤖. As a web developer and
+      entrepreneur, it's pretty omni-present, and I'm currently diving in deep.
+      I've only really begun making an acquaintance with AI tools and
+      methodologies, but I'm forming opinions. I'm putting up this site and blog
+      in part to share those insights, and to start conversations.
     </p>
 
     <h3>My Goals</h3>
