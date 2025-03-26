@@ -1,66 +1,34 @@
 <template>
-  <div class="blog-list">
-    <h1>Blog Posts</h1>
-    <div class="posts">
-      <div v-for="post in blogPosts" :key="post.slug" class="post-card">
-        <router-link :to="`/blog/${post.slug}`" class="post-link">
-          <h2>{{ post.title }}</h2>
-          <p class="date">{{ post.date }}</p>
-          <p class="excerpt">{{ post.excerpt }}</p>
-        </router-link>
-      </div>
-    </div>
-  </div>
+  <v-container>
+    <v-row>
+      <v-col>
+        <h1 class="text-h3 mb-6">Blog Posts</h1>
+        <v-row>
+          <v-col
+            v-for="post in blogPosts"
+            :key="post.slug"
+            cols="12"
+            md="6"
+            lg="4"
+          >
+            <v-card :to="`/blog/${post.slug}`" class="h-100">
+              <v-card-text>
+                <h2 class="text-h5 mb-2">{{ post.title }}</h2>
+                <div class="text-caption text-medium-emphasis mb-2">
+                  {{ post.date }}
+                </div>
+                <p class="text-body-2 text-medium-emphasis">
+                  {{ post.excerpt }}
+                </p>
+              </v-card-text>
+            </v-card>
+          </v-col>
+        </v-row>
+      </v-col>
+    </v-row>
+  </v-container>
 </template>
 
 <script setup lang="ts">
 import { blogPosts } from "./blog-list";
 </script>
-
-<style scoped>
-.blog-list {
-  padding: 2rem;
-}
-
-.posts {
-  display: grid;
-  gap: 2rem;
-  margin-top: 2rem;
-}
-
-.post-card {
-  border: 1px solid #eee;
-  border-radius: 8px;
-  padding: 1.5rem;
-  transition:
-    transform 0.2s,
-    box-shadow 0.2s;
-}
-
-.post-card:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-
-.post-link {
-  text-decoration: none;
-  color: inherit;
-}
-
-h2 {
-  margin: 0 0 0.5rem 0;
-  color: #2c3e50;
-}
-
-.date {
-  color: #666;
-  font-size: 0.9rem;
-  margin: 0 0 1rem 0;
-}
-
-.excerpt {
-  color: #666;
-  line-height: 1.6;
-  margin: 0;
-}
-</style>
