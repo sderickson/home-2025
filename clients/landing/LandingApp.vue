@@ -15,12 +15,19 @@
           to="/blog"
           :active="route.path.startsWith('/blog')"
         ></v-list-item>
+
+        <v-list-item
+          prepend-icon="mdi-account"
+          title="About"
+          to="/about"
+          :active="route.path === '/about'"
+        ></v-list-item>
       </v-list>
     </v-navigation-drawer>
 
     <v-app-bar color="cyan-darken-2">
       <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
-      <v-app-bar-title>Home 2025</v-app-bar-title>
+      <v-app-bar-title>scotterickson.info</v-app-bar-title>
     </v-app-bar>
 
     <v-main class="bg-yellow-lighten-5">
