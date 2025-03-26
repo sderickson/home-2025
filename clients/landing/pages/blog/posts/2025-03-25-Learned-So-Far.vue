@@ -155,14 +155,12 @@
     </ul>
 
     <p>
-      I could go on, but you get the idea. The point I'm trying to get is, LLMs
-      in some ways have the strengths and weaknesses of people, and we've been
-      developing tools for decades to address those weaknesses and leverage
-      those strengths. So let's bring the tools we know and love to bear on AI.
-      That will give developers the tools to quickly and more automatically
-      guide agents in the right direction, and will give management the tools to
-      make sure things aren't going off the rails in the way we all worry AI
-      will do.
+      I could go on, but you get the idea. The point is that LLMs share many of
+      the same strengths and weaknesses as people. We've spent decades
+      developing tools to address human limitations and leverage our strengths -
+      now we need to apply those same principles to AI. This means adapting
+      existing tools to help developers guide AI agents effectively and help
+      management ensure AI systems stay on track.
     </p>
 
     <p>
