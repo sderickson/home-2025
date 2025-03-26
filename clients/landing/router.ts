@@ -2,7 +2,6 @@ import { createRouter, createWebHistory } from "vue-router";
 import HomePage from "./pages/home/HomePage.vue";
 import AboutMePage from "./pages/about/AboutMePage.vue";
 import BlogListPage from "./pages/blog/BlogListPage.vue";
-import BlogPostPage from "./pages/blog/BlogPostPage.vue";
 import BlogPostMissingPage from "./pages/blog/BlogPostMissingPage.vue";
 import FirstBlogPostPage from "./pages/blog/FirstBlogPostPage.vue";
 
@@ -32,21 +31,14 @@ const router = createRouter({
       component: BlogListPage,
     },
     {
-      path: "/blog/:slug",
-      name: "blog-post",
-      component: BlogPostPage,
-      children: [
-        {
-          path: "2025-03-25-first-post",
-          name: "first-post",
-          component: FirstBlogPostPage,
-        },
-        {
-          path: ":pathMatch(.*)*",
-          name: "blog-post-missing",
-          component: BlogPostMissingPage,
-        },
-      ],
+      path: "/blog/2025-03-25-first-post",
+      name: "first-post",
+      component: FirstBlogPostPage,
+    },
+    {
+      path: "/blog/:pathMatch(.*)*",
+      name: "blog-post-missing",
+      component: BlogPostMissingPage,
     },
   ],
 });

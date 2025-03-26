@@ -36,6 +36,4 @@
   </div>
 </template>
 
-<script setup>
-// Component logic can be added here if needed
-</script>
+<script setup lang="ts"></script>
