@@ -3,7 +3,7 @@ import HomePage from "./pages/home/HomePage.vue";
 import AboutMePage from "./pages/about/AboutMePage.vue";
 import BlogListPage from "./pages/blog/BlogListPage.vue";
 import BlogPostMissingPage from "./pages/blog/BlogPostMissingPage.vue";
-import FirstBlogPostPage from "./pages/blog/FirstBlogPostPage.vue";
+import { blogPosts } from "./pages/blog/blog-list";
 
 const router = createRouter({
   history: createWebHistory(),
@@ -30,11 +30,11 @@ const router = createRouter({
       name: "blog-list",
       component: BlogListPage,
     },
-    {
-      path: "/blog/2025-03-25-first-post",
-      name: "first-post",
-      component: FirstBlogPostPage,
-    },
+    ...blogPosts.map((post) => ({
+      path: `/blog/${post.slug}`,
+      name: post.slug,
+      component: post.component,
+    })),
     {
       path: "/blog/:pathMatch(.*)*",
       name: "blog-post-missing",

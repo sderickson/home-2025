@@ -14,23 +14,7 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from "vue";
-
-interface BlogPost {
-  title: string;
-  date: string;
-  excerpt: string;
-  slug: string;
-}
-
-const blogPosts = ref<BlogPost[]>([
-  {
-    title: "What I've Learned So Far",
-    date: "March 25, 2025",
-    excerpt: "Three months into adopting AI, here are my takeaways so far.",
-    slug: "2025-03-25-learned-so-far",
-  },
-]);
+import { blogPosts } from "./blog-list";
 </script>
 
 <style scoped>
