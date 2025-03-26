@@ -53,8 +53,8 @@
     </p>
 
     <p>
-      To centralize and leverage my learnings and tools across my websites (this
-      is the fourth so far), I'm building
+      To centralize and leverage my learnings across my websites (this is the
+      fourth so far), I'm building
       <a href="https://saf-demo.online/" target="_blank">a framework</a> called
       SAF: <strong>Scott's Application Framework</strong>. It's named that
       because it's a framework that I'm building for me,
@@ -188,22 +188,15 @@
     <h4>Don't trust. Always verify.</h4>
 
     <p>
-      Whatever the AI says, you gotta check it. I think we all know this, but it
-      bears repeating. It'll say it did something, or that you should do a
-      certain thing... but you just can't take anything it says on faith.
+      Never take AI's word for it. Even when it claims to have done something or
+      suggests a solution, verify everything. For example, I've tried having it
+      create and update project checklists - it's great at generating them but
+      can't reliably track what it's done.
     </p>
 
     <p>
-      For example, I've been trying to have it create and update checklists for
-      projects it does. It's fine at generating them, but I've given up trying
-      to tell it to update what it's done, because it honestly doesn't seem to
-      know what it's done.
-    </p>
-
-    <p>
-      This also goes for when having conversations with it. I do like asking
-      Claude for library and service suggestions, but they're only suggestions,
-      leads to follow really.
+      This applies to all AI interactions. I like asking Claude for library
+      suggestions, but they're just starting points for my own research.
     </p>
 
     <h3>What's next?</h3>
