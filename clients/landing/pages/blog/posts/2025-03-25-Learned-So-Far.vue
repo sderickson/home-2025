@@ -144,13 +144,11 @@
         run into failures then... that's probably reflected in your codebase.
       </li>
       <li>
-        <strong>Modularity</strong>: Context windows are kind of thing with
-        LLMs. The more context you have to give them, the more they struggle. I
-        know the models are getting more powerful and all, but hey, computers
-        have been getting faster and more powerful for decades and we still have
-        to worry about resource limitations. In some way we need to measure and
-        handle things becoming too large at every level, from functions to files
-        to packages to products, for the sake of AI and ourselves.
+        <strong>Modularity</strong>: Context windows are a key limitation with
+        LLMs. The more context you have to give them, the more they struggle.
+        Even as models get more powerful, we still need to manage complexity at
+        every level - from functions to files to packages to products - for both
+        AI and human maintainability.
       </li>
     </ul>
 
@@ -173,20 +171,18 @@
 
     <p>
       If you can't envision what you want your agent to do, then you need to
-      figure it out first. For example, first time I had Claude generate a
-      vuetify-based page, I could look at it and sense that it was
-      over-complicated and not ideal, but I didn't know vuetify so I couldn't
-      say how it ought to be written. So I paused, reviewed the docs, and then
-      came back with some thoughts.
+      figure it out first. For example, when I first had Claude generate a
+      vuetify-based page, I could sense it was over-complicated but didn't know
+      enough about Vuetify to explain why. So I paused, reviewed the docs, and
+      came back with clearer guidance.
     </p>
 
     <p>
-      You also don't have to know <em>exactly</em> how it should be built. As
-      with delegating to people, the main things you have to have in mind are
-      <strong>success criteria</strong> and <strong>objectives</strong>. There
-      are many possible sufficient solutions, and the agent only has to produce
-      one of them. But what qualifies as something successful in your mind? What
-      do you think is "good enough"?
+      You don't need to know <em>exactly</em> how it should be built. Just like
+      delegating to people, focus on <strong>success criteria</strong> and
+      <strong>objectives</strong>. There are many valid solutions - the agent
+      just needs to produce one that meets your standards. What does "good
+      enough" look like to you?
     </p>
 
     <h4>Don't trust. Always verify.</h4>
