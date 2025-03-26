@@ -24,7 +24,7 @@
 
 	# Minimal logging configuration - only errors and warnings
 	log {
-		level INFO
+		level ERROR
 		format console
 	}
 
