@@ -55,4 +55,9 @@ defineProps<{
 .blog-post :deep(p) {
   margin: 0 0 1.5rem 0;
 }
+
+.blog-post :deep(ul) {
+  margin-left: 2.5rem;
+  margin-bottom: 1.5rem;
+}
 </style>
