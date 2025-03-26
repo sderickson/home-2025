@@ -15,7 +15,6 @@
 - [x] Implement BlogListPage.vue
 - [x] Create BlogPostPage.vue with dynamic routing
 - [x] Implement BlogPostMissingPage.vue for 404 cases
-- [ ] Create blog post template
 
 ## Routing
 
@@ -28,6 +27,10 @@
 
 - [x] Apply consistent styling across components
 - [x] Ensure responsive design works on all screen sizes
+
+## Refactoring
+
+- [ ] Rework blog post styling to be not handled in each blog post
 
 ## Testing
 

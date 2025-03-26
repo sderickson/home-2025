@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from "vue-router";
 import HomePage from "./pages/home/HomePage.vue";
 import AboutMePage from "./pages/about/AboutMePage.vue";
 import BlogListPage from "./pages/blog/BlogListPage.vue";
+import BlogPostPage from "./pages/blog/BlogPostPage.vue";
 import BlogPostMissingPage from "./pages/blog/BlogPostMissingPage.vue";
 import { blogPosts } from "./pages/blog/blog-list";
 
@@ -33,7 +34,14 @@ const router = createRouter({
     ...blogPosts.map((post) => ({
       path: `/blog/${post.slug}`,
       name: post.slug,
-      component: post.component,
+      component: BlogPostPage,
+      props: { post },
+      children: [
+        {
+          path: "",
+          component: post.component,
+        },
+      ],
     })),
     {
       path: "/blog/:pathMatch(.*)*",

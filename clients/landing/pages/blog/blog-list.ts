@@ -1,12 +1,5 @@
 import FirstBlogPostPage from "./posts/FirstBlogPostPage.vue";
-
-export interface BlogPost {
-  title: string;
-  date: string;
-  excerpt: string;
-  slug: string;
-  component: typeof FirstBlogPostPage;
-}
+import type { BlogPost } from "./types";
 
 export const blogPosts: BlogPost[] = [
   {
