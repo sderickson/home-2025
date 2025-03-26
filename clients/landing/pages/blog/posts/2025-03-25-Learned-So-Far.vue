@@ -202,19 +202,31 @@
     <h3>What's next?</h3>
 
     <p>
-      Well, as you can see things have mostly been on the software development
-      side. I'm starting to get to the point where we're iterating on an AI
-      product, so starting to form opinions there. As a freelancer, I'm not sure
-      when I'll get an opportunity to design and build and test AI in a company
-      process or two, but in the meanwhile I can theorize at least.
+      So far, my focus has been on software development - building tools,
+      experimenting with AI coding, and developing my framework. I'm definitely
+      building product faster than I ever have before, but I think there's still
+      quite some room for growth.
     </p>
 
     <p>
-      There are so many things to try, though. I've almost entirely been using
-      Claude and Cursor, and I haven't touched things like MCP or RAGs or a
-      bunch of other stuff. Who knows, maybe one of these tools, or figuring out
-      how to use them in a new way, will undercut the theories above. Probably.
-      Will see!
+      For one thing, there's still so many existing tools to explore. I've
+      mainly been using Claude and Cursor, but I'm curious about tools like MCP
+      and RAGs. I expect these will challenge my current theories about AI
+      development.
+    </p>
+
+    <p>
+      I'm also starting to work on AI-powered products, which is helping me form
+      opinions about how to create features that users actually trust and want
+      to use (and that I'd want to use). Given what I'm currently working on,
+      I'm not sure when I'll get to design and test AI in company processes, but
+      I'm building a foundation of practical experience that I can apply when
+      those opportunities come.
+    </p>
+
+    <p>
+      That's all for now. Next up I'll talk more about my current challenge:
+      getting the AI to consistently build things the right (or simply my) way.
     </p>
 
     <p>Thanks for reading! 🙏</p>
