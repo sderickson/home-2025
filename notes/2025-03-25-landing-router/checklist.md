@@ -6,7 +6,7 @@
 
 - [x] Implement left navigation sidebar in LandingApp.vue
 - [x] Add responsive design for sidebar
-- [ ] Style main content area
+- [x] Style main content area
 
 ### Pages
 
