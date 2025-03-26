@@ -2,8 +2,8 @@
   <div>
     <p>
       I officially inaugurate this blog with a post about AI 🤖. It's topical,
-      and as a web developer and entrepreneur, it's quite talk of the town. I've
-      played around with it a bit at my old job but I never really got the
+      and as a web developer and entrepreneur, it's quite the talk of the town.
+      I've played around with it a bit at my old job but I never really got the
       chance, or made the time, to dive into it. Now I've got time, so now it's
       my main focus. I've only begun making an acquaintance, but I want to start
       this blog now while my thoughts are still evolving.
@@ -12,14 +12,14 @@
     <h3>My Goals</h3>
 
     <p>
-      <strong>To form my own opinions</strong>. Ending last year, I didn't have
-      a high opinion, but I also didn't have much of a strong one. LLM-powered
-      AI had not made its way into my day-to-day in work or at home, there were
-      no products where I was like "I'm really glad they put AI here", and very
-      few of the engineers I knew were super jazzed about using it to code. But
-      I was also fairly distracted by all the responsibilities of work and home.
-      Now I'm taking a sabbatical with the aim to come out retooled and
-      opinionated.
+      <strong>To form my own opinions</strong>. At the end of last year, I
+      didn't have a high opinion, but I also didn't have much of a strong one.
+      LLM-powered AI had not made its way into my day-to-day in work or at home,
+      there were no products where I was like "I'm really glad they put AI
+      here", and very few of the engineers I knew were super jazzed about using
+      it to code. But I was also fairly distracted by all the responsibilities
+      of work and home. Now I'm taking a sabbatical with the aim to come out
+      retooled and opinionated.
     </p>
 
     <p>There are three opinions I want to form:</p>
@@ -182,7 +182,7 @@
 
     <p>
       You also don't have to know <em>exactly</em> how it should be built. As
-      with delegating to people, the main thing you have to have in mind are
+      with delegating to people, the main things you have to have in mind are
       <strong>success criteria</strong> and <strong>objectives</strong>. There
       are many possible sufficient solutions, and the agent only has to produce
       one of them. But what qualifies as something successful in your mind? What
