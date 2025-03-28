@@ -5,7 +5,9 @@ FROM node:22-slim AS builder
 WORKDIR /app
 COPY ./package*.json .
 COPY ./tsconfig.json .
-COPY ./saflib/tsconfig.json ./saflib/
+COPY saflib/ ./saflib/
+RUN npm install --omit=dev
+
 COPY ./clients/package*.json ./clients/
 
 RUN npm install --omit=dev
