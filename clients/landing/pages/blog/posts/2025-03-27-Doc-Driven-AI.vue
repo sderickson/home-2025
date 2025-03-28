@@ -96,28 +96,30 @@
       structure:
     </p>
     <pre>
-      /
-      |-- clients/
-      |   |-- spa1/
-      |   |-- spa2/
-      |   |-- ...
-      |-- services/
-      |   |-- service1/
-      |   |-- service2/
-      |   |-- ...
-      |-- other-product-specific-folders/
-      |   |-- ...
-      |-- saflib/       # shared libraries
-      |   |-- shared-library1/
-      |   |   |-- docs/
-      |   |   |   |-- doc1.md
-      |   |   |   |-- doc2.md
-      |   |   |   |-- ...
-      |   |-- shared-library2/
-      |   |   |-- docs/
-      |   |   |   |-- doc1.md
-      |   |   |   |-- doc2.md
-      |   |   |   |-- ...
+# Root directory structure
+/
+├── clients/                
+│   ├── spa1/               
+│   ├── spa2/
+│   └── ...
+├── services/               
+│   ├── service1/
+│   ├── service2/
+│   └── ...
+├── (other-product-folders)/
+│   └── ...
+└── saflib/
+    ├── shared-library/
+    │   ├── package.json
+    │   ├── src/
+    │   └── docs/
+    │       ├── doc1.md
+    │       ├── doc2.md
+    │       └── ...
+    └── group-of-shared-dependencies/
+    │   ├── package.json
+    │   └── docs/
+    └── ...
     </pre>
     <p>For context, "SAF" is my app framework, and there are these repos:</p>
     <ul>
