@@ -338,7 +338,7 @@
       That's where I'm at right now. I'll close out this post with some
       questions I imagine you might have.
     </p>
-    <h4>What Existing Tools Are Out There?</h4>
+    <h4>What existing tools are out there?</h4>
     <p>
       Seems thin. I did a cursory look around and when it comes to documentation
       and refactoring, the tools I find tend to be fairly low-level (like
@@ -355,7 +355,7 @@
       promising. If you find something,
       <a href="mailto:sderickson@gmail.com">let me know</a>.
     </p>
-    <h4>What's Next?</h4>
+    <h4>What's next?</h4>
     <p>
       Consuming docs is the most under-developed part of my workflow. I'm going
       to keep giving the agent documentation manually for now, because I'm still
@@ -365,11 +365,6 @@
       prompts more automatically and scale this thing.
     </p>
     <p>
-      A complementary topic which I've been alluding to is the process for
-      agentic coding for whole features or even roadmaps. I'll write about that
-      in my next post.
-    </p>
-    <p>
       Even further down the line, I'd like to set up some sort of evaluation,
       both of the documentation and of the agents that use them. I'm really
       focused on Cursor agent right now, but it would be great to compare that
@@ -377,6 +372,23 @@
       tools are at using docs vs each other. Or how much better an agent is at
       making changes based on different docs.
     </p>
-    <p>Thanks for reading!</p>
+    <p>
+      A complementary topic which I've been alluding to is the process for
+      agentic coding for whole features or even roadmaps. I'll write about that
+      in my next post.
+    </p>
+    <h4>Can I get involved?</h4>
+    <p>
+      I'd like that! Let me know what you think, or give this approach a try and
+      see if it works for you. If you want you can try working with what I have,
+      clone the
+      <a href="https://github.com/sderickson/saf-template">SAF template repo</a
+      >. Also, watch the
+      <a href="https://github.com/sderickson/saflib">saflib repo</a> to follow
+      along, and feel free to leave issues or PRs there.
+    </p>
+    <p class="text-center mt-12">
+      <strong>Thanks for reading!</strong>
+    </p>
   </div>
 </template>
