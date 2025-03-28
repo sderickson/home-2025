@@ -1,9 +1,9 @@
 <template>
   <div>
     <p>
-      As I mentioned in my last post, I expect code quality to become more
-      important than ever when building and maintaining code with AI. Linters,
-      tests, and modularity are key to efficient and well
+      I expect code quality to become more important than ever when building and
+      maintaining code with AI. Linters, tests, and modularity are key to
+      efficient and well
       <s>written</s> generated code, but today I want to dive into
       <strong>documentation</strong>, which I haven't seen talked about as much.
     </p>
@@ -19,11 +19,11 @@
     </v-card>
     <p>
       I think it's a bottleneck because in the (admittedly short) time I've
-      spent working with agents, I've had to explain over and over on problems
-      which already have solutions. They spin on mocking libraries for Vue
-      component testing, implement with patterns and interfaces and schemas
-      inconsistent with existing implementations, and just generally build
-      things in a not-ideal way which will come back to haunt us later, like:
+      spent working with agents, I've had to explain solutions for the same
+      problems repeatedly. Agents spin on mocking libraries for Vue component
+      testing, implement with patterns and interfaces and schemas inconsistent
+      with existing implementations, and just generally build things in a
+      not-ideal way which will come back to haunt me later, like:
     </p>
     <ul>
       <li>
@@ -44,9 +44,9 @@
     </ul>
     <p>
       These are the sorts of things developers and managers worry about when
-      they see vibe coding trends. People get a high when things just magically
-      work to begin with, but from experience we know it won't be long before
-      there are major headaches to deal with.
+      they see vibe coding trending. People get a high when things just
+      magically work to begin with, but from experience we know it won't be long
+      before there are major headaches to deal with.
     </p>
     <p>
       For myself, I want to get to the point where most of the time when I give
@@ -62,8 +62,8 @@
     <p>I hope documentation can get us there, so let me share my approach.</p>
     <h3>Overview</h3>
     <p>
-      I have three elements to offer which should help keep that make this a
-      sustainable habit, by minimizing cost to you and maximizing benefit:
+      I have three elements to offer which should help make documentation a
+      sustainable habit, by minimizing cost and maximizing benefit to you:
     </p>
     <ol>
       <li>
@@ -74,7 +74,7 @@
         deciding what even to write and how much.
       </li>
       <li>
-        <strong>Creating Docs</strong>: This is actually the easiest part. You
+        <strong>Creating Docs</strong>: This is actually the easiest part; you
         can generate and update documentation as a byproduct of your work. If
         you can incorporate automated testing into your standard practice, you
         can also incorporate documentation-driven development. Both are easier
@@ -83,7 +83,7 @@
       <li>
         <strong>Consuming Docs</strong>: This is where things get tricky again.
         In a perfect world, the agent would know what documentation to use for
-        every scenario, but at least I haven't figured out how to do that yet.
+        every scenario, but I at least haven't figured out how to do that yet.
         Still, you can get some immediate benefits to your workflow by just
         linking to the docs you have as you create them, focusing on the tasks
         you do most often.
@@ -91,9 +91,9 @@
     </ol>
     <h3>Library and Document Structure</h3>
     <p>
-      You're going to be making a lot of documentation, how to keep track of it
-      all? How do you break it down into right-size pieces? Well, here's my
-      structure:
+      You're going to be making plenty of documentation, so how to keep track of
+      it all? How do you break it down into right-size pieces? Well, here's my
+      package-based structure:
     </p>
     <pre>
 # Root directory structure
@@ -133,7 +133,7 @@
       </li>
       <li>
         <a href="https://github.com/sderickson/saf-2025">saf-2025</a> - a demo
-        site, and also the first place I build new SAF functionality
+        site, and also the first place I test new SAF functionality
       </li>
     </ul>
     <p>
@@ -141,7 +141,7 @@
       <code>saflib</code> directory as a git submodule; both
       <code>saf-2025</code> and <code>saf-template</code> do that. By colocating
       shared code and docs, I can rest assured anything I write can be used
-      across all my projects, and I can develop and use shared code in tandem.
+      across all my projects.
     </p>
     <p>
       For example, the
@@ -175,9 +175,8 @@
     </ul>
     <p>
       I'm pretty pleased with this structure; it's usually clear where something
-      needs to go. I'm already dividing up package dependencies and
-      implementations by like-dependencies and concerns, so it's natural to
-      extend that grouping to documentation.
+      needs to go. I'm already grouped dependencies and implementations by
+      package, so it's natural to extend that grouping to documentation.
     </p>
 
     <h4>Adopting a Documentation Structure</h4>
@@ -185,8 +184,8 @@
       For your own codebases, I recommend grouping your docs similarly. If your
       codebase is disorganized (whose business critical codebase isn't?) then
       you might identify an existing under-utilized common space, or just create
-      one, and start filling that out and pulling like concerns in as you go.
-      These "packages" that house documentation on a theme don't
+      one, and start filling that out and pulling non-doc files in as you go.
+      These packages that house documentation by theme don't
       <em>have</em> to have anything else in them (like my
       <a href="https://github.com/sderickson/saflib/tree/main/processes"
         ><code>processes</code> "package"</a
@@ -241,24 +240,25 @@
       </li>
       <li>
         Go back-and-forth with this one agent to get it right. For best results,
-        don't fix things, or at least major things, yourself. If you do, explain
-        to the agent what you did to solve the problem and why.
+        try not to fix things yourself, get the agent to do it instead. If you
+        do fix it yourself, explain to the agent what you did to solve the
+        problem and why.
       </li>
       <li>
-        Once the code is good enough, tell the agent to write or update
-        documentation based on your back-and-forth
+        Once the code is good enough, tell the agent to write or update a doc
+        based on your back-and-forth
       </li>
     </ol>
     <p>
-      This way all of the time spent coaching the agent goes beyond the one
-      session. I review the docs they write, prompt them to make changes if
-      there are large ones or make the changes myself if they are small (it's
-      more okay to do the fixing yourself with the docs). Then I create a new
-      agent for the next task and the loop starts again. Or, if I
-      <em>really</em> want the next iteration to go much better, I'll revert all
-      the previous agent's work and give the same task to a new agent with the
-      generated docs. Repeat until an agent does everything right (enough) the
-      first try.
+      Now all of the time spent coaching the agent goes beyond the one session.
+      I review the docs they write, prompt them to make changes if there are
+      large ones or make the changes myself if they are small (it's more okay to
+      do the fixing yourself with the docs). Then I create a new agent for the
+      next task and the loop starts again. Or, if I
+      <em>really</em> want the next iteration to go much better, I'll trash the
+      previous agent's perfectly good work and give the same task to a new agent
+      with the generated docs. Repeat until an agent does everything right
+      (enough) the first try.
     </p>
     <p>
       In terms of how the documents themselves are written or structured, I let
@@ -274,14 +274,14 @@
       <em>is</em> documentation and the agent does it wrong,
       <strong
         >it's usually because the documentation is out of date or wrong</strong
-      >! Luckily, having the agent fix the documentation is also not hard at
-      all, I usually tell it to do just that and it does based on our
-      back-and-forth, or a more recent example. Using that
-      <code>drizzle-sqlite3</code> example from before, I'd started using a
-      factory pattern in my implementation, but hadn't updated the docs yet, so
-      the agent started off the old way as specified in the doc. When it tried
-      to add the database query to the others, it quickly realized its mistake
-      and refactored. Then I had it update
+      >! Luckily, having the agent fix the documentation is just as easy; I
+      usually tell the agent to do it based on our back-and-forth or some
+      existing, more up-to-date code. Using that
+      <code>drizzle-sqlite3</code> example from before, I'd started moving away
+      from singletons, but hadn't updated the docs yet, so the agent started off
+      the old way importing the database directly as specified in the doc
+      examples. When it tried to add the database queries to the others, it
+      quickly realized its mistake and refactored. Then I had it update
       <a
         href="https://github.com/sderickson/saflib/pull/3/files#diff-839f134a6266bf815d546e9a26247227ca9fd21cfc4f22fa3adcf669b4916b21L26"
         >the doc</a
@@ -303,31 +303,30 @@
     </p>
     <p>
       One more thing to keep the pace and motivation going: I'm honestly pretty
-      loose about my documentation. Reading over some of the docs now, I can
-      find all sorts of things that could be better and accurate, but I'm
-      resisting the urge to clean it all up for this post. Perfect is the enemy
-      of the good and all that, so I'm setting a low bar because I'm more likely
-      to fill out the docs and have a reasonable base to build on and iterate
-      with if I don't aim to have polished output every PR. Once a doc stops
-      getting updates as frequently through this cycle, or you're ready for
-      wider adoption, that's probably a good time to go back and polish it.
+      loose about my documentation. Reading over some of the docs now, I see all
+      sorts of things that could be better and accurate, but I'm resisting the
+      urge to clean it all up for this post. Perfect is the enemy of the good
+      and all that, so I'm setting a low bar because I'm more likely to fill out
+      the docs and have a reasonable base to build on and iterate with if I
+      don't aim to have polished output every PR. Once a doc stops getting
+      updates as frequently through this cycle, or you're ready for wider
+      adoption, that's probably a good time to go back and polish it.
     </p>
     <h3>Consuming Documentation</h3>
     <p>
       This I'm still trying to figure out. In an ideal world, the agent would
       just find the docs it should use on its own, but so far I haven't been
       able to get that to happen. Mostly I've been playing around with
-      <a href="https://docs.cursor.com/context/rules-for-ai"
-        >Cursor's rules for AI</a
-      >, but that really didn't work. I'd give the agent a system prompt with a
+      <a href="https://docs.cursor.com/context/rules-for-ai">Cursor∂ rules</a>,
+      but that really didn't work. I'd give the agent a system prompt with a
       list of docs, or a link to a list of docs and ask it to affirm it read the
       docs, and it very rarely did.
     </p>
     <p>
       The next thing I tried was to incorporate documentation into checklists.
-      I'd have a template I'd ask it to generate a checklist from, with links to
-      docs throughout the template, and the agent would just strip them out in
-      the project checklist. The agent also would tend not to follow checklists
+      I'd give the agent a template to generate a checklist from, with links to
+      docs throughout the template, and the agent would just strip them out from
+      what it generated. The agent also would tend not to follow checklists
       without a heavy hand... This is a tangent, so I'll go into process more in
       my next blog post. Suffice it to say, telling the agent to follow a
       checklist with "review doc" instructions sprinkled in doesn't work.
@@ -393,7 +392,7 @@
       documentation and of the agents that use them. I'm really focused on
       Cursor agent right now, but it would be great to compare that to, say,
       Claude Code, Cline, and Windsurf, and analyze how good those tools are at
-      using docs compared to each other. Or how much better an agent is at
+      using docs compared to each other. Or how effective a given agent is at
       making changes based on different docs.
     </p>
     <p>
