@@ -60,47 +60,36 @@
       high enough then deep human review will glean diminishing returns.
     </p>
     <p>I hope documentation can get us there, so let me share my approach.</p>
-    <h3>Staying Motivated</h3>
+    <h3>Overview</h3>
     <p>
-      The first thing I had to address was
-      <strong>motivation</strong>. The thing about this approach is that it's
-      not a silver bullet and it doesn't work automagically (for a monthly
-      fee!). You the developer/team/organization need to put this work in to get
-      the benefit. It won't work without dedicated, habitual effort and
-      attention. That's why a good product or methodology needs a solid feedback
-      loop to keep using it and benefiting from it. It can't be too hard to use,
-      and you need to see results on the regular.
-    </p>
-    <p>
-      I have three elements to offer which should help keep that motivation loop
-      going, by minimizing cost to you and maximizing benefit:
+      I have three elements to offer which should help keep that make this a
+      sustainable habit, by minimizing cost to you and maximizing benefit:
     </p>
     <ol>
       <li>
-        <strong>Structuring</strong>: When writing documentation, it's a
+        <strong>Structuring Docs</strong>: When writing documentation, it's a
         buzzkill if you don't even know where to put it to begin with, how to
         frame it, or what to include. That blank page can be rough, and there
         will be many to fill. I have some general ideas that you can apply when
         deciding what even to write and how much.
       </li>
       <li>
-        <strong>Creating</strong>: This is actually the easiest part. You can
-        generate and update documentation as a byproduct of your work. If you
-        can incorporate automated testing into your standard practice, you can
-        also incorporate documentation-driven development. Both are easier than
-        ever with agents.
+        <strong>Creating Docs</strong>: This is actually the easiest part. You
+        can generate and update documentation as a byproduct of your work. If
+        you can incorporate automated testing into your standard practice, you
+        can also incorporate documentation-driven development. Both are easier
+        than ever with agents.
       </li>
       <li>
-        <strong>Consuming</strong>: This is where things get tricky again. In a
-        perfect world, the agent would know what documentation to use for every
-        scenario, but at least I haven't figured out how to do that yet. Still,
-        you can get some immediate benefits to your workflow by just linking to
-        the docs you have as you create them, focusing on the tasks you do most
-        often.
+        <strong>Consuming Docs</strong>: This is where things get tricky again.
+        In a perfect world, the agent would know what documentation to use for
+        every scenario, but at least I haven't figured out how to do that yet.
+        Still, you can get some immediate benefits to your workflow by just
+        linking to the docs you have as you create them, focusing on the tasks
+        you do most often.
       </li>
     </ol>
-    <p>Let's address each of these in turn.</p>
-    <h3>Documentation Structure</h3>
+    <h3>Library and Document Structure</h3>
     <p>
       You're going to be making a lot of documentation, how to keep track of it
       all? How do you break it down into right-size pieces? Well, here's my
@@ -147,10 +136,10 @@
     </ul>
     <p>
       Each SAF project clones the
-      <code>saflib</code> directory as a git submodule, like both
-      <code>saf-2025</code> and <code>saf-template</code> have. By colocating
+      <code>saflib</code> directory as a git submodule; both
+      <code>saf-2025</code> and <code>saf-template</code> do that. By colocating
       shared code and docs, I can rest assured anything I write can be used
-      across all my projects.
+      across all my projects, and I can develop and use shared code in tandem.
     </p>
     <p>
       For example, the
@@ -189,7 +178,7 @@
       extend that grouping to documentation.
     </p>
 
-    <h4>Adoption</h4>
+    <h4>Adopting a Documentation Structure</h4>
     <p>
       For your own codebases, I recommend grouping your docs similarly. If your
       codebase is disorganized (whose business critical codebase isn't?) then
@@ -269,7 +258,7 @@
       generated docs. Repeat until an agent does everything right (enough) the
       first try.
     </p>
-    <h4>Looping Over Time</h4>
+    <h4>Loop Progression</h4>
     <p>
       One thing I've noticed is that when there
       <em>is</em> documentation and the agent does it wrong,
@@ -379,6 +368,14 @@
       A complementary topic which I've been alluding to is the process for
       agentic coding for whole features or even roadmaps. I'll write about that
       in my next post.
+    </p>
+    <p>
+      Even further down the line, I'd like to set up some sort of evaluation,
+      both of the documentation and of the agents that use them. I'm really
+      focused on Cursor agent right now, but it would be great to compare that
+      to, say, Claude Code or Cline or Windsurf, and analyze how good those
+      tools are at using docs vs each other. Or how much better an agent is at
+      making changes based on different docs.
     </p>
     <p>Thanks for reading!</p>
   </div>
