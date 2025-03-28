@@ -118,7 +118,7 @@
       |   |-- ...
       |-- other-product-specific-folders/
       |   |-- ...
-      |-- saflib/       <-- shared libraries
+      |-- saflib/       # shared libraries
       |   |-- shared-library1/
       |   |   |-- docs/
       |   |   |   |-- doc1.md
