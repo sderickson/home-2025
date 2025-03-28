@@ -12,7 +12,7 @@
           Back to Blog Posts
         </v-btn>
 
-        <v-card class="blog-post pa-8">
+        <v-card class="blog-post pa-sm-8 pa-2">
           <v-card-title class="my-4">
             <h2>{{ post.title }}</h2>
           </v-card-title>
