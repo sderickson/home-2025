@@ -13,13 +13,13 @@
 
           <p class="mb-6">
             For work, I've been a web developer since the days of IE6, and an
-            entrepreneur for nearly two decades. I've seen the web ecosystem
-            evolve dramatically, cofounded
+            entrepreneur just as long. I've seen the web ecosystem evolve
+            dramatically, cofounded
             <a href="https://skritter.com">skritter.com</a> and
             <a href="https://codecombat.com">codecombat.com</a>, and worked at
             <a href="https://dropbox.com">Dropbox</a> on growth and platforms.
             When I'm not coding, I pursue various hobbies including woodworking,
-            playing games of all kinds, cooking, and baking.
+            playing games of all kinds, cooking, and hiking.
           </p>
 
           <p class="mb-6">
