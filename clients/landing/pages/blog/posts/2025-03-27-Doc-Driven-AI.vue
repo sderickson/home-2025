@@ -258,6 +258,14 @@
       generated docs. Repeat until an agent does everything right (enough) the
       first try.
     </p>
+    <p>
+      In terms of how the documents themselves are written or structured, I let
+      the agent do it how it will. I might suggest some content belongs better
+      in a different doc, but again I'm not spending a bunch of time polishing
+      here. I have a sneaking suspicion the agent is too profligate with its
+      words and examples, but that feels more like an optimization than a dire
+      issue.
+    </p>
     <h4>Loop Progression</h4>
     <p>
       One thing I've noticed is that when there
@@ -333,6 +341,16 @@
       prompt when we get to that task so the agent is less likely to sidestep my
       very healthy obsession with docs.
     </p>
+    <p>
+      The good news is that when the agent <em>does</em> RTFM, the output is
+      markedly closer to what I want. The problems I see all tend to be
+      undocumented, or wrongly documented. I have a ways to go before all the
+      common tasks are written down, but I'm already moving faster. For example,
+      the checklist above was a pretty cross-cutting feature that took less than
+      a day, and much of that was spent adding docs. I estimate without them it
+      would have taken twice that time, and I wouldn't have a bunch of new and
+      refreshed markdown files to show for it.
+    </p>
     <h3>Wrapping Up</h3>
     <p>
       That's where I'm at right now. I'll close out this post with some
@@ -362,14 +380,18 @@
       tuning and assessing the structure and creation. Once I'm more confident,
       I might try creating an
       <a href="https://github.com/modelcontextprotocol">MCP</a> that generates
-      prompts more automatically and scale this thing.
+      prompts more automatically and piecemeal so I can just tell the agent to
+      "do the next item the checklist tool gives you" rather than copy and
+      pasting doc and file links, and also auditing every step of the process
+      (did they remember to run the tests?).
     </p>
     <p>
-      Even further down the line, I'd like to set up some sort of evaluation,
-      both of the documentation and of the agents that use them. I'm really
-      focused on Cursor agent right now, but it would be great to compare that
-      to, say, Claude Code or Cline or Windsurf, and analyze how good those
-      tools are at using docs vs each other. Or how much better an agent is at
+      Even further down the line, I'd like to set up some sort of
+      <a href="https://inspect.aisi.org.uk/">evaluation</a>, both of the
+      documentation and of the agents that use them. I'm really focused on
+      Cursor agent right now, but it would be great to compare that to, say,
+      Claude Code, Cline, and Windsurf, and analyze how good those tools are at
+      using docs compared to each other. Or how much better an agent is at
       making changes based on different docs.
     </p>
     <p>
@@ -382,8 +404,8 @@
       I'd like that! Let me know what you think, or give this approach a try and
       see if it works for you. If you want you can try working with what I have,
       clone the
-      <a href="https://github.com/sderickson/saf-template">SAF template repo</a
-      >. Also, watch the
+      <a href="https://github.com/sderickson/saf-template">SAF template repo</a>
+      and try to build with it. Also, watch the
       <a href="https://github.com/sderickson/saflib">saflib repo</a> to follow
       along, and feel free to leave issues or PRs there.
     </p>
