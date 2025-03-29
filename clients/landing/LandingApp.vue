@@ -31,7 +31,7 @@
     </v-app-bar>
 
     <v-main class="bg-yellow-lighten-5">
-      <v-container fluid class="pa-6">
+      <v-container fluid class="pa-md-6 pa-1">
         <router-view />
       </v-container>
     </v-main>

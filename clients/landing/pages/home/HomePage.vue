@@ -18,6 +18,15 @@
       <v-table>
         <tbody>
           <tr>
+            <td>2025-03-28</td>
+            <td>
+              Added blog post:
+              <router-link to="/blog/2025-03-27-Doc-Driven-AI">
+                Doc-Driven AI
+              </router-link>
+            </td>
+          </tr>
+          <tr>
             <td>2025-03-26</td>
             <td>
               Added blog post:

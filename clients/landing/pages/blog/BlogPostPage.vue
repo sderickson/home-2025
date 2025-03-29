@@ -12,7 +12,7 @@
           Back to Blog Posts
         </v-btn>
 
-        <v-card class="blog-post">
+        <v-card class="blog-post pa-sm-8 pa-2">
           <v-card-title class="my-4">
             <h2>{{ post.title }}</h2>
           </v-card-title>
@@ -53,11 +53,16 @@ defineProps<{
 }
 
 .blog-post :deep(p) {
-  margin: 0 0 1.5rem 0;
+  margin: 1.5rem 0 1.5rem 0;
 }
 
-.blog-post :deep(ul) {
+.blog-post :deep(ul),
+.blog-post :deep(ol) {
   margin-left: 2.5rem;
   margin-bottom: 1.5rem;
+}
+
+.blog-post :deep(code) {
+  font-weight: bolder;
 }
 </style>
