@@ -162,7 +162,7 @@
         </ul>
 
         <p>
-            Though I will continue to improve the spec/checklist part of the process iteratively, this is not currently my main focus, because it's not really the best use of time. I want to focus on something more basic: getting tasks to happen correctly more reliably.
+            Though I will continue to improve the spec/checklist part of the process iteratively, this is not currently my main focus, because it's not really the best use of time. I want to focus on something more basic: getting tasks to happen correctly more reliably. More on that later.
         </p>
 
         <p>
