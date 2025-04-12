@@ -14,8 +14,9 @@
     "ts:check": "vue-tsc -b"
   },
   "dependencies": {
+    "@saflib/monorepo": "*",
     "@saflib/vue-spa": "*",
-    "@saflib/monorepo": "*"
+    "unplugin-vue-markdown": "^28.3.1"
   },
   "devDependencies": {
     "@saflib/vue-spa-dev": "*"

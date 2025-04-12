@@ -4,22 +4,28 @@ import vuetify from "vite-plugin-vuetify";
 import vueDevTools from "vite-plugin-vue-devtools";
 import type { ProxyOptions } from "vite";
 import ignore from "rollup-plugin-ignore";
+import Markdown from "unplugin-vue-markdown/vite";
+
 const DEBUG_PROXY = true;
 
 function makeConfig() {
   return defineConfig({
     base: "/",
     appType: "mpa",
-    plugins: [vue(), vuetify(), vueDevTools()],
+    plugins: [
+      vue({
+        include: [/\.vue$/, /\.md$/],
+      }),
+      vuetify(),
+      vueDevTools(),
+      Markdown({}),
+    ],
     build: {
       rollupOptions: {
         plugins: [ignore(["**/*.test.ts"])],
       },
     },
     server: {
-      fs: {
-        allow: ["/app/node_modules", "/app/clients"],
-      },
       strictPort: true,
       host: true,
       /*

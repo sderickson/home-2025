@@ -1,6 +1,7 @@
 import FirstBlogPostPage from "./posts/2025-03-25-Learned-So-Far.vue";
 import DocDrivenAI from "./posts/2025-03-27-Doc-Driven-AI.vue";
 import PlanningAndExecution from "./posts/2025-04-04-Planning-And-Execution.vue";
+import Reliability from "./posts/2025-04-11-Reliability.vue";
 import type { BlogPost } from "./types";
 
 export const blogPosts: BlogPost[] = [
@@ -26,6 +27,14 @@ export const blogPosts: BlogPost[] = [
     excerpt: "I have a fairly consistent pattern for each feature now.",
     slug: "2025-04-04-planning-and-execution",
     component: PlanningAndExecution,
+  },
+  {
+    title: "The Reliability Problem",
+    date: "April 11, 2025",
+    excerpt:
+      "How reliable do LLMs need to be? And how can we help them get there?",
+    slug: "2025-04-11-reliability",
+    component: Reliability,
   },
 ];
 
