@@ -8,7 +8,7 @@ COPY ./tsconfig.json .
 COPY saflib/ ./saflib/
 RUN npm install --omit=dev
 
-COPY ./clients/package*.json ./clients/
+COPY ./clients/spas/package*.json ./clients/spas/
 
 RUN npm install --omit=dev
 
@@ -21,7 +21,7 @@ RUN npm install @rollup/rollup-linux-arm64-gnu || true
 RUN npm install @rollup/rollup-linux-x64-gnu || true
 
 # Copy source files
-COPY --exclude=**/*.test.ts --exclude=vitest.config.ts ./clients/ ./clients/
+COPY --exclude=**/*.test.ts --exclude=vitest.config.ts ./clients/spas/ ./clients/spas/
 
 # Vue app setup
-WORKDIR /app/clients
+WORKDIR /app/clients/spas

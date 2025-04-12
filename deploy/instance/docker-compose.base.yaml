@@ -19,7 +19,7 @@ services:
     image: scotterickson-clients:latest
     build:
       context: ../..
-      dockerfile: ./clients/Dockerfile
+      dockerfile: ./clients/spas/Dockerfile
 
 volumes:
   caddy_data:

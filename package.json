@@ -11,7 +11,7 @@
   },
   "author": "TODO",
   "workspaces": [
-    "clients",
+    "clients/*",
     "saflib/*"
   ],
   "engines": {
