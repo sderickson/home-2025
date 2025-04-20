@@ -2,6 +2,7 @@ import FirstBlogPostPage from "./posts/2025-03-25-Learned-So-Far.vue";
 import DocDrivenAI from "./posts/2025-03-27-Doc-Driven-AI.vue";
 import PlanningAndExecution from "./posts/2025-04-04-Planning-And-Execution.vue";
 import Reliability from "./posts/2025-04-11-Reliability.vue";
+import TheoryOfDX from "./posts/2025-04-18-Theory-of-Dx.vue";
 import type { BlogPost } from "./types";
 
 export const blogPosts: BlogPost[] = [
@@ -35,6 +36,13 @@ export const blogPosts: BlogPost[] = [
       "How reliable do LLMs need to be? And how can we help them get there?",
     slug: "2025-04-11-reliability",
     component: Reliability,
+  },
+  {
+    title: "Theory of DX",
+    date: "April 18, 2025",
+    excerpt: "How to optimize for agentic coding",
+    slug: "2025-04-18-theory-of-dx",
+    component: TheoryOfDX,
   },
 ];
 

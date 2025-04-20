@@ -18,6 +18,15 @@
       <v-table>
         <tbody>
           <tr>
+            <td>2025-04-20</td>
+            <td>
+              Added blog post:
+              <router-link to="/blog/2025-04-18-Theory-of-Dx">
+                Theory of DX
+              </router-link>
+            </td>
+          </tr>
+          <tr>
             <td>2025-04-11</td>
             <td>
               Added blog post:
