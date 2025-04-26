@@ -3,6 +3,7 @@ import DocDrivenAI from "./posts/2025-03-27-Doc-Driven-AI.vue";
 import PlanningAndExecution from "./posts/2025-04-04-Planning-And-Execution.vue";
 import Reliability from "./posts/2025-04-11-Reliability.vue";
 import TheoryOfDX from "./posts/2025-04-18-Theory-of-Dx.vue";
+import Roadmap from "./posts/2025-04-25-Roadmap.vue";
 import type { BlogPost } from "./types";
 
 export const blogPosts: BlogPost[] = [
@@ -40,9 +41,16 @@ export const blogPosts: BlogPost[] = [
   {
     title: "Theory of DX",
     date: "April 18, 2025",
-    excerpt: "How to optimize for agentic coding",
+    excerpt: "How to optimize *your* codebase for agentic coding",
     slug: "2025-04-18-theory-of-dx",
     component: TheoryOfDX,
+  },
+  {
+    title: "DX Eval Roadmap",
+    date: "April 25, 2025",
+    excerpt: "Proving or disproving the Theory of DX",
+    slug: "2025-04-25-dx-eval-roadmap",
+    component: Roadmap,
   },
 ];
 
