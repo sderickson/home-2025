@@ -64,5 +64,16 @@ defineProps<{
 
 .blog-post :deep(code) {
   font-weight: bolder;
+  max-width: 100%;
+}
+
+.blog-post :deep(pre) {
+  background-color: #f0f0f0;
+  padding: 1rem 1rem;
+  border-radius: 0.2rem;
+  margin-bottom: 1.5rem;
+  word-wrap: break-word;
+  overflow: clip;
+  font-size: 0.75rem;
 }
 </style>

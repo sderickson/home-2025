@@ -4,6 +4,7 @@ import PlanningAndExecution from "./posts/2025-04-04-Planning-And-Execution.vue"
 import Reliability from "./posts/2025-04-11-Reliability.vue";
 import TheoryOfDX from "./posts/2025-04-18-Theory-of-Dx.vue";
 import Roadmap from "./posts/2025-04-25-Roadmap.vue";
+import WorkflowFirstIteration from "./posts/2025-05-10-Workflow-First-Iteration.vue";
 import type { BlogPost } from "./types";
 
 export const blogPosts: BlogPost[] = [
@@ -51,6 +52,14 @@ export const blogPosts: BlogPost[] = [
     excerpt: "Proving or disproving the Theory of DX",
     slug: "2025-04-25-dx-eval-roadmap",
     component: Roadmap,
+  },
+  {
+    title: "Workflow First Iteration",
+    date: "May 10, 2025",
+    excerpt:
+      "I built a prototype tool to guide an agent through a series of steps.",
+    slug: "2025-05-10-workflow-first-iteration",
+    component: WorkflowFirstIteration,
   },
 ];
 

@@ -18,6 +18,24 @@
       <v-table>
         <tbody>
           <tr>
+            <td>2025-05-10</td>
+            <td>
+              Added blog post:
+              <router-link to="/blog/2025-05-10-Workflow-First-Iteration">
+                Workflow First Iteration
+              </router-link>
+            </td>
+          </tr>
+          <tr>
+            <td>2025-05-01</td>
+            <td>
+              Added blog post:
+              <router-link to="/blog/2025-04-25-dx-eval-roadmap">
+                DX Eval Roadmap
+              </router-link>
+            </td>
+          </tr>
+          <tr>
             <td>2025-04-20</td>
             <td>
               Added blog post:
