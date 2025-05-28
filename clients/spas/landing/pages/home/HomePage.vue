@@ -18,6 +18,15 @@
       <v-table>
         <tbody>
           <tr>
+            <td>2025-05-24</td>
+            <td>
+              Added blog post:
+              <router-link to="/blog/2025-05-24-Accountability-and-Gaslighting">
+                Accountability and Gaslighting
+              </router-link>
+            </td>
+          </tr>
+          <tr>
             <td>2025-05-10</td>
             <td>
               Added blog post:

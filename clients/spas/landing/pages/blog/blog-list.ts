@@ -5,6 +5,7 @@ import Reliability from "./posts/2025-04-11-Reliability.vue";
 import TheoryOfDX from "./posts/2025-04-18-Theory-of-Dx.vue";
 import Roadmap from "./posts/2025-04-25-Roadmap.vue";
 import WorkflowFirstIteration from "./posts/2025-05-10-Workflow-First-Iteration.vue";
+import AccountabilityAndGaslighting from "./posts/2025-05-24-Accountability-and-Gaslighting.vue";
 import type { BlogPost } from "./types";
 
 export const blogPosts: BlogPost[] = [
@@ -60,6 +61,13 @@ export const blogPosts: BlogPost[] = [
       "I built a prototype tool to guide an agent through a series of steps.",
     slug: "2025-05-10-workflow-first-iteration",
     component: WorkflowFirstIteration,
+  },
+  {
+    title: "Accountability and Gaslighting",
+    date: "May 24, 2025",
+    excerpt: "The gap between LLM hype and LLM reality and how to bridge it.",
+    slug: "2025-05-24-accountability-and-gaslighting",
+    component: AccountabilityAndGaslighting,
   },
 ];
 
