@@ -18,6 +18,15 @@
       <v-table>
         <tbody>
           <tr>
+            <td>2025-06-15</td>
+            <td>
+              Added blog post:
+              <router-link to="/blog/2025-06-14-Governing-Products">
+                Governing Products
+              </router-link>
+            </td>
+          </tr>
+          <tr>
             <td>2025-05-24</td>
             <td>
               Added blog post:
