@@ -3,5 +3,5 @@
 </template>
 
 <script setup lang="ts">
-import BlogPost from "./2025-06-14-Work-Governance.md";
+import BlogPost from "./2025-06-14-Governing-Products.md";
 </script>

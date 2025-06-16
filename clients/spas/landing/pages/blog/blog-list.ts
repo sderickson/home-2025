@@ -6,7 +6,7 @@ import TheoryOfDX from "./posts/2025-04-18-Theory-of-Dx.vue";
 import Roadmap from "./posts/2025-04-25-Roadmap.vue";
 import WorkflowFirstIteration from "./posts/2025-05-10-Workflow-First-Iteration.vue";
 import AccountabilityAndGaslighting from "./posts/2025-05-24-Accountability-and-Gaslighting.vue";
-import WorkGovernance from "./posts/2025-06-14-Work-Governance.vue";
+import GoverningProducts from "./posts/2025-06-14-Governing-Products.vue";
 import type { BlogPost } from "./types";
 
 export const blogPosts: BlogPost[] = [
@@ -71,11 +71,11 @@ export const blogPosts: BlogPost[] = [
     component: AccountabilityAndGaslighting,
   },
   {
-    title: "Work Governance",
+    title: "Governing Products",
     date: "June 14, 2025",
     excerpt: "How all sorts of roles might look in the near future.",
-    slug: "2025-06-14-work-governance",
-    component: WorkGovernance,
+    slug: "2025-06-14-governing-products",
+    component: GoverningProducts,
   }
 ];
 
