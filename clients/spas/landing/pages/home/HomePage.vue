@@ -18,6 +18,15 @@
       <v-table>
         <tbody>
           <tr>
+            <td>2025-07-05</td>
+            <td>
+              Added blog post:
+              <router-link to="/blog/2025-07-05-six-month-status">
+                Six-Month Status Update
+              </router-link>
+            </td>
+          </tr>
+          <tr>
             <td>2025-06-15</td>
             <td>
               Added blog post:

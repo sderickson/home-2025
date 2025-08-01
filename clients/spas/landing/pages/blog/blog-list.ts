@@ -7,6 +7,7 @@ import Roadmap from "./posts/2025-04-25-Roadmap.vue";
 import WorkflowFirstIteration from "./posts/2025-05-10-Workflow-First-Iteration.vue";
 import AccountabilityAndGaslighting from "./posts/2025-05-24-Accountability-and-Gaslighting.vue";
 import GoverningProducts from "./posts/2025-06-14-Governing-Products.vue";
+import SixMonthStatus from "./posts/2025-07-05-Six-Month-Status.vue";
 import type { BlogPost } from "./types";
 
 export const blogPosts: BlogPost[] = [
@@ -76,7 +77,14 @@ export const blogPosts: BlogPost[] = [
     excerpt: "How all sorts of roles might look in the near future.",
     slug: "2025-06-14-governing-products",
     component: GoverningProducts,
-  }
+  },
+  {
+    title: "Six-Month Status Update",
+    date: "July 5, 2025",
+    excerpt: "How things are going, where I'm at, and where I'm headed.",
+    slug: "2025-07-05-six-month-status",
+    component: SixMonthStatus,
+  },
 ];
 
 export function getBlogPostBySlug(slug: string): BlogPost | undefined {
