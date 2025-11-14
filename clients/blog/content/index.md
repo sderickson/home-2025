@@ -1,5 +1,4 @@
-# Blog List
-
+# Blog Posts by Date
 
 ### Summer 2025
 * [Six Month Status Update](/blog/2025-07-05-Six-Month-Status)
