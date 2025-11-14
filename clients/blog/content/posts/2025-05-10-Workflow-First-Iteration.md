@@ -1,3 +1,7 @@
+# Workflow First Iteration
+
+_May 10, 2025_
+
 Last time I wrote, I described [a roadmap](https://scotterickson.info/blog/2025-04-25-dx-eval-roadmap) to prove or disprove various elements of [my DX theory](https://scotterickson.info/blog/2025-04-18-theory-of-dx). This helped clarify for myself what I needed to build on the way: a workflow tool. I went ahead and built a prototype soon after that blog post, and have since played around with it. Now can lay out more elements for a sufficiently comprehensive workflow tool.
 
 ### The Prototype

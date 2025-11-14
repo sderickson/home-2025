@@ -1,3 +1,7 @@
+# Reliability
+
+_April 11, 2025_
+
 If there's one question I'm trying to answer right now, it's how much LLMs can do to expedite and make more accessible creating complex web apps. I'm talking web apps with 3rd party integrations, background processes, webhooks, public APIs and more, as well as all the supporting features a web developer expects to have when developing and maintaining such products. Analytics, alerts, feature gates, CI/CD, quality metrics, all kinds of automated tests, etc. There's no doubt that LLMs can help anyone write scripts and simple products, and that they can speed up the work of an experienced developer on a large project. But could they allow a non-developer to build a complex product? Or an experienced developer build an entire product in weeks or days?
 
 I think it comes down to reliability. Specifically:

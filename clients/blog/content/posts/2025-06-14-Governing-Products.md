@@ -1,3 +1,7 @@
+# Governing Products
+
+_June 14, 2025_
+
 When I think about how software development and other roles will evolve over the coming years, [Factorio](https://www.factorio.com/) comes to mind. It's a computer game, sort of an overhead RTS, where you crash land on an alien planet, and over time go from gathering materials and building conveyer belts by hand, to designing and building huge, ever-growing and heavily optimized factories.
 
 It's a gradual process, and you can't skip ahead, but you're also fundamentally limited if you don't adopt the ever-scaling-up gameplay. Once you create a small portion of your factory dedicated to manufacturing a certain product, such as high-end circuit boards, you can create a blueprint which lets you copy and paste it to create a great many more. But then you need to scale up your harvesting, logistics, power, and defensive systems. Once these have all reached a certain level of maturity, you can play without looking at your character. You just have the map open and switch between overlays, telling systems to basically "harvest everything in this region" or "build seven more factories of this type over in that area". You govern at a high level in order to produce far more.

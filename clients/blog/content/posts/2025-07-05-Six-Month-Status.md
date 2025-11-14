@@ -1,4 +1,4 @@
-# Six Month Status
+# Six Month Status Update
 
 It's been a few months since I posted about my [roadmap](/blog/2025-04-25-dx-eval-roadmap), and six months since I started work on this project to grapple with AI, so I thought I'd give a general update of how things are going, where I'm at, and where I'm headed.
 

@@ -1,3 +1,7 @@
+# Theory of DX
+
+_April 18, 2025_
+
 I have a working theory how best to set up your project for AI, and it revolves around DX: Developer Experience. My theory is that what helps engineers, tech leads, and engineering managers be efficient and productive, and what helps coding agents to be efficient and productive, are basically the same thing. So for anyone building software wanting to make the most of these new and evolving tools, they should invest in their DX.
 
 It's a working theory, so admittedly I don't have strong evidence, but I'm writing out my thoughts *so that* I have something explicit to work on. What I've seen in my own experience shows promise for these ideas, so it's worth spending the time investigating further and general consideration. Still, take what follows with a grain of salt. I'll expand on and adjust these theories as I go.

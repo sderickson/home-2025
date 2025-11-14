@@ -1,3 +1,7 @@
+# Accountability and Gaslighting
+
+_May 24, 2025_
+
 I'm trying to make sense of what I see and hear around how AI tools are transforming the software industry, and I keep coming back to the term "gaslighting".
 
 I experience it first-hand in marketing, when looking at products and services. Landing pages that claim a product will boost your productivity by some multiple, throw everything together for, and make all sorts of work a breeze. I think, am I using the right set of tools? Am I off in how I'm using them? There's a gap between what these sites promise and what my sense is of what these tools are actually capable of, but I wonder if I'm missing something; I spend a good deal of time figuring out how to cajole agents to end up with something close to what I want.
