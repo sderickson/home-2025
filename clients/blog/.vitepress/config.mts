@@ -12,8 +12,14 @@ export default defineConfig({
     ],
     sidebar: [
       {
-        text: "Blog",
-        link: "/blog",
+        text: "Highlighted Posts",
+        items: [
+          { text: "Governing Products", link: "/posts/2025-06-14-Governing-Products" },
+          { text: "Accountability and Gaslighting", link: "/posts/2025-05-24-Accountability-and-Gaslighting" },
+          { text: "Theory of DX", link: "/posts/2025-04-18-Theory-of-Dx" },
+          { text: "Reliability", link: "/posts/2025-04-11-Reliability" },
+          
+        ],
       },
     ],
 
