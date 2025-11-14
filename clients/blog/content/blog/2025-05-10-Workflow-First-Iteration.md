@@ -4,11 +4,11 @@ _May 10, 2025_
 
 Last time I wrote, I described [a roadmap](https://scotterickson.info/blog/2025-04-25-dx-eval-roadmap) to prove or disprove various elements of [my DX theory](https://scotterickson.info/blog/2025-04-18-theory-of-dx). This helped clarify for myself what I needed to build on the way: a workflow tool. I went ahead and built a prototype soon after that blog post, and have since played around with it. Now can lay out more elements for a sufficiently comprehensive workflow tool.
 
-### The Prototype
+## The Prototype
 
 If you're interested in the particulars of this tool, read on, otherwise skip ahead.
 
-#### Source
+### Source
 
 It's [not very complicated](https://github.com/sderickson/saflib/tree/main/workflows). The key bits are:
 
@@ -23,7 +23,7 @@ An example workflow, and the first workflow I built, is a [workflow for creating
 - Computed values
 - A series of steps: names and prompts
 
-#### Integration
+### Integration
 
 I wanted each project to have control what workflows are available, so the workflows package doesn't put anything in the `bin` package property directly. Instead, the project monorepo (which houses `saflib` as a git submodule) will add a `bin` command which imports the workflows to include and runs the CLI code with the selection.
 
@@ -63,7 +63,7 @@ runWorkflowCli(workflows);
 }
 ```
 
-#### Usage
+### Usage
 
 A developer can use the workflow tool by running the command in the terminal.
 
@@ -142,7 +142,7 @@ from the database.
 
 Then I put Cursor in "YOLO Mode" so the agent can run without confirmation from me for every bash command. The agent goes to town, running the CLI tool, follows the prompt, then repeats until it gets the "workflow has been completed" message.
 
-#### State and Packages
+### State and Packages
 
 Since the workflow is executed through a series of `npm exec` commands, the state needs to be loaded, run, and saved during each run so subsequent executions work the way you'd expect. To do that, the CLI tool [loads from and saves to a file in the `cwd`](https://github.com/sderickson/saflib/blob/24ec28406218f43c66a433502db10ffc6a1138e0/workflows/src/file-io.ts#L7), which in Node monorepos, is the nearest folder with a `package.json`. So you can only have one workflow running in a given package at a time, and workflow instances are associated with a specific package.
 
@@ -152,7 +152,7 @@ It does sometimes confuse the AI, though, getting different results in different
 
 I _could_ make things simpler by filtering workflows based on `cwd` dependencies. Even with the few workflows I've created, it's getting a bit much to look through them for the one I want. Say I'm looking for a "Vue" workflow command in a frontend package, I don't want to have to sift through a bunch of non-applicable "OpenAPI", "Node/Express", and "Drizzle/SQLite" workflows. But one thing I _can_ do is have the workflow tool find all the dependencies of the `cwd()`'s package.json, and only list workflows provided by those dependencies. Then the list of available commands that show up in the CLI are only those that make sense to run in your current location. I'll probably add that feature in the not-too-distant future.
 
-### Experience So Far
+## Experience So Far
 
 The workflow tool already shows promise for smaller workflows. I've used [this database query workflow](https://github.com/sderickson/saflib/blob/main/drizzle-sqlite3/workflows/add-queries.ts) a bunch of times and I've been perfectly happy with the results each time. It takes five minutes for each of them to be written, tested, reviewed, and committed. They require a single Cursor "request" because it typically requires fewer than Cursor's 25-tool-call-per-request limit. I'd say compared to writing them by hand, it's definitely 2-4x faster, and it seems reliable enough.
 
@@ -169,7 +169,7 @@ I somehow managed to lose the workflow in some git commit (I blame submodules, I
 
 Well, the refactoring workflow notwithstanding, I definitely want to add more workflows and extend this tool more to fix deficiencies.
 
-### Features to Add
+## Features to Add
 
 Based on the refactoring workflow experience and others, these are the features I think would be needed for a more complete product:
 
@@ -195,7 +195,7 @@ For agent config, XState is actually building a variant set of libraries [for ag
 
 Anyway, that about wraps things up. I'll be adopting XState next, then continuing to build and use these workflows as part of building websites. Should be fun!
 
-### Bit of Bike Shedding 🚲
+## Bit of Bike Shedding 🚲
 
 Just a little.
 

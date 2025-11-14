@@ -16,7 +16,7 @@ Don't get me wrong, I *do* know these tools are quite capable of making software
 
 Let's go level-by-level.
 
-### Agent Accountability
+## Agent Accountability
 
 This is probably the most obvious: agents need to be held accountable for what they do and produce. The agent might *say* it read the docs, or tested the new code thoroughly, but all too often it did not. One way or another, code whether generated or written needs to adhere to best practices, handle edge cases, avoid unnecessary complexity, account for legacy systems, be reliable and performant, and include test cases, documentation, and code comments. When these things are not done, even when prompted initially to do so, the agent needs further prompting that it must *actually* do so to move forward. This is time-consuming and, after a few times, frustrating.
 
@@ -26,7 +26,7 @@ I don't think reminding the agent over and over to actually adhere to standards 
 
 For my part, I'm experimenting with a workflow tool using [XState](https://stately.ai/docs) (a finite state machine library) that gradually prompts an agent through a series of steps and I'm going to include accountability checks along the way. These will disallow the agent from moving forward if tests don't pass, TODOs still exist, typechecking fails, or anything else which can be validated automatically. I'll use [XState guards](https://stately.ai/docs/guards) (for sync checks) and [invoking promises](https://stately.ai/docs/invoke#invoking-promises) (for async checks); these prevent or alter transitions based on what they return. Whenever I experience an agent skipping a step or cutting corners, I'll just add more automated checks.
 
-### Developer Accountability
+## Developer Accountability
 
 In the end it's not the agent's responsibility to always *produce* something correct, it's the developer's responsibility to make sure what is *committed* is correct (enough). It's the engineer's responsibility to review output and correct errors that the agent (or agent tool) hasn't already fixed.
 
@@ -53,7 +53,7 @@ To parallelize as much as possible it might look like this:
 
 In the end, everyone involved is reasonably certain it was done so responsibly, and the blast radius of anything going wrong is minimized, without having to review every line. It's probably not enough on its own though; other industry-standard guardrails such as static analysis in CI, metrics paired with alerts, and agents reviewing code will also help keep developers accountable to their PRs.
 
-### Manager Accountability
+## Manager Accountability
 
 So you're a manager, you own some areas of the codebase, and it's your responsibility to take care of it. How do you and your manager and everyone on up know if you're meeting that responsibility?
 
@@ -67,7 +67,7 @@ Again, barring some major shift, the same rules that have applied historically s
 
 On the other side of the coin, for managers to hold their direct reports who are engineers accountable effectively, it seems like they will need to spend some time with these tools themselves. You can be told what it's like trying to convince an agent to do what you want but it's hard to be an authority and coach on something you haven't done yourself.
 
-### Takeaways
+## Takeaways
 
 I wrote this for myself because I noticed my own cognitive dissonance in looking at tools out there and reading what they can do. I've been working full time with LLMs for five months now and while I'm impressed and eager and expecting to unlock more potential from this stuff, my experience hasn't matched the hype. So I'm trying to make sense of what's real vs what's said, and what one needs to do to bridge the gap and how much of it can actually *be* bridged. The above is my current mental model that is the best way I can explain things.
 

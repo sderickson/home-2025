@@ -14,9 +14,9 @@ There are several facets to DX I'm focusing on: documentation, quality metrics, 
 * Why it's important for agents, and
 * What I'd recommend doing/am myself doing to set things up for both
 
-### DX Categories
+## DX Categories
 
-#### Clear Documentation
+### Clear Documentation
 
 The codebase should have docs for all recommended folder structures, workflows, software design, and libraries. If one is missing, that should indicate it's still undecided or just hasn't been worked on yet. Even undecided things should have a stub to make it clear where things stand and acknowledged as a TODO. Without these docs, developers are more likely to create, fork, and/or install multiple redundant solutions, because there isn't a source of truth for what the "right way" is. You end up with multiple competing defacto standards.
 
@@ -24,7 +24,7 @@ Docs neatly fold into agentic coding workflows because prompts can simply link t
 
 This is important to focus on because I expect any 3rd party library which purports to analyze and understand your codebase automagically will not be able to do so well unless you have your own documentation. An advanced tool might be able to identify competing defacto standards, and even facilitate resolving them and help you make them actual standards by adding docs. But at some point *you* need to make choices about what tools and patterns and invariants you want and get them down somewhere both humans and agents can access and make use of them. So make sure you have a system for contributing and maintaining written documentation that's embedded in the codebase but not in the code. Preferably near or in the code module it pertains to.
 
-#### Quality Metrics
+### Quality Metrics
 
 An important tool for managing a large codebase is a set of engineering and product metrics to measure health. This includes both leading indicators and signals from production. A set might include:
 
@@ -46,7 +46,7 @@ These metrics also are an invaluable tool when much of the code is being generat
 
 However, to have good metrics, you need a codebase which can support them. If things are too tangled, the numbers you get either don't exist or have less meaning as it's unclear where or who they apply to. If things can't be measured automatically, they need to be created manually and that's slower, less consistent, and almost certainly not comprehensive. To be sure that agentic coding isn't undermining your product, you'll need to define and move toward a modular standard if you don't have one already. Once you can support module-based metrics, then you'll need to start collecting them and deciding which ones you think are important and should be built, maintained, and reported on.
 
-#### Accessible Interfaces
+### Accessible Interfaces
 
 This is related to the above, in that it's important for the codebase to be broken into small enough chunks, but also those chunks need to have accessible interfaces, ones that don't require digging into the code to find them. If the interface for your API is only determinable by reading your controller, that's inaccessible. If your package has no indication of what methods are intended to be used by external consumers vs internal-use only (public vs private), that's inaccessible. In these cases, you have to do work and make assumptions to come up with the apparent interface; it's open to interpretation. Developers could easily use tools in unintended ways which are unsafe or unmaintainable.
 
@@ -54,7 +54,7 @@ For agentic coding, interfaces being accessible enables humans to pay less atten
 
 So, once you've got that modular unit which is necessary for quality metrics, you'll also want to make sure a public interface can be extrapolated from it. Any package should clearly define how consumers and/or end-users interact with this unit. These interfaces also need to be committed to the repo, one way or another. Some interfaces (such as npm package interfaces) need to be generated, and so that should be done as part of CI (either enforced or automated). That way you have something to review in the PR for a given interface change. Interfaces which are used *to* generate other files work as-is.
 
-#### Static Analysis
+### Static Analysis
 
 Generally speaking you want to fix things as soon as possible; ideally as soon as they're created, and static analysis tools do just that. If you're trying to prevent or get rid of a harmful pattern or deprecated approach, or guard against an easy and common set of mistakes, a linter or type checker is one of the best ways to do it. And if you've got these tools set up well and they run fast enough, the developer can know something is wrong as soon as it's typed.
 
@@ -70,7 +70,7 @@ For issues like this, I would solve it in the priority of:
 
 If you don't already have linters set up or actively maintained, set them up or dust them off and make sure they're running in the background in code editors. Developers should build or enable ones for issues they see coming up regularly from their agents or colleagues in code reviews.
 
-#### Best Practices
+### Best Practices
 
 This is a fuzzy space. These are things like how much automated testing should there be, when and why to rely on dependencies or frameworks, how reusable and reused code should be, and what patterns to use for code reuse. These are interesting areas because there are competing philosophies, with different answers in different contexts. But it's important for a team of engineers working on the same project to (for the most part) align on a set of best practices so that they tend to row in the same direction.
 
@@ -82,11 +82,11 @@ Given all this, when working on system prompts, I recommend focusing on providin
 
 Anyway, deciding what is obvious vs non-obvious, and which way to go on the non-obvious stuff, requires plenty of work to figure out amongst a group. Once you've decided, the team's system prompt becomes the source of truth on what was decided.
 
-### Prerequisites
+## Prerequisites
 
 There are some common themes above which can be deduced as important to tackle sooner rather than later.
 
-#### Modularity
+### Modularity
 
 This I consider a hard prerequisite for:
 
@@ -98,7 +98,7 @@ If the codebase can't be broken down into small-enough modules (small enough for
 
 Without a codebase which is understandably structured, either by man or machine, progress will be stymied. So it's important to decide what is your codebase's "module" and be consistent about how one accesses its interface, its docs, and *each* of your chosen metrics. If you use one language, use its standard. If you use more than one, you'll probably need a higher-level construct such as Bazel.
 
-#### Decision Framework
+### Decision Framework
 
 Once AI can make you go faster, the next bottleneck is identifying and making decisions. You need to decide what goes in the docs, what interfaces should be, what metrics to track, which linters to use, and what your best practices are. Also what to build.
 
@@ -108,7 +108,7 @@ On the plus side, agentic coding necessitates and drives creating sources of tru
 
 But that still leaves you with deciding who decides what, when, how. It's decisions all the way down.
 
-### Conclusion
+## Conclusion
 
 So there you have it, my recipe for agentic-coding-driven success. I believe it's entirely possible today for businesses and individuals to invest in specific areas which will likely improve the effectiveness of AI coding tools now and going forward, and will definitely improve the effectiveness of their engineers and organization. No wheels need to be reinvented; these strategies mitigate risk by having proven solutions and benefits. The worst that could happen is developers are able to move faster on their own.
 

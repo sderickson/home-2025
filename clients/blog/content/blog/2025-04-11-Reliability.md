@@ -11,11 +11,11 @@ I think it comes down to reliability. Specifically:
 
 Let's start with the second one.
 
-### Reliability Models
+## Reliability Models
 
 LLMs bring out a wide range of reactions and opinions in people. Some say it just will help developers be more productive, others say it will completely replace them and even bring about the singularity. I wonder how much of this comes down to a disparity in how "good" people think LLMs need to be. There are a couple ways, or mental models, that one could think about it...
 
-#### The "Web Stack" Model
+### The "Web Stack" Model
 
 In web development for your typical product, the software is broken down into a series of layers. At the bottom you have things like the operating system or the database, which are very stable and dependable. As you work your way up, you get to the top of the backend with API endpoints, and finally the frontend which is the product itself, or the one most users see anyway. For a user, if you use the product on a given day, you'll likely navigate through several pages, each of which have multiple features. Each of those features call multiple backend endpoints, which in turn each depend on multiple lower level services and machines, fanning out in all directions.
 
@@ -29,7 +29,7 @@ _Building_ a web product can be broken down similarly, with similar ramification
 
 If this is the right way to think about reliability for LLMs, then we're a good way off from them magically building complex products. At _best_ I give an LLM a task and it does it right a third of the time. I want to be able to tell the LLM to create an endpoint or test a component and be surprised when I need to intervene. Otherwise I'll always be on guard, double and triple checking everything it does, lest it drive my product off a cliff.
 
-#### The "Spaced Repetition" Model
+### The "Spaced Repetition" Model
 
 There is another mental model, though, where the optimal success rate is actually lower than you'd expect.
 
@@ -43,7 +43,7 @@ Assuming the LLM can fix 90% of _those_ mistakes when they're found or reported,
 
 Still, a couple iterations to get ~99.9% of the product working and structured correctly is not too shabby. And it means you don't need to get 99.999% success rate on every single task in order for an LLM to likely build a reliable-enough product, eventually. You might even be able to optimize for AI spend and use a model which gets it right only 80% of the time, but like with the flashcards, you might annoy your users of they have to report a great many bugs, even if they go away quickly and automatically.
 
-#### Which is Right?
+### Which is Right?
 
 Well, it depends. On how organized you are.
 
@@ -59,7 +59,7 @@ In that scenario, I believe your experience will be similar to that of the Space
 
 Anyway, that's a fair amount on how reliable LLMs need to be. What about the other side of the coin?
 
-### How Reliable Can LLMs Be?
+## How Reliable Can LLMs Be?
 
 I don't have a super-wide range of experience with LLMs (I mostly just use what Cursor provides) but I think we're a ways still. I recently did some testing on a specific task: create a new typescript package in my monorepo. Just a stub. I'd give the agent the name of the desired package, the location I wanted it in, and a link to the [doc](https://docs.saf-demo.online/monorepo/docs/ts-packages.html), which has clear instructions. At first I worked with the agent to update the docs based on what they did wrong, but eventually I figured it wasn't going to get that much better than it already was (and the agent agreed). At that point I just repeatedly tried to have agents do the same work over and over, reverting each attempt. My experience was this:
 
