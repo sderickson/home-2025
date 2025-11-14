@@ -347,7 +347,7 @@
   --vp-code-bg: var(--vp-c-default-soft);
 
   --vp-code-block-color: var(--vp-c-text-2);
-  --vp-code-block-bg: var(--vp-c-bg-alt);
+  --vp-code-block-bg: var(--vp-c-gray-3);
   --vp-code-block-divider-color: var(--vp-c-gutter);
 
   --vp-code-lang-color: var(--vp-c-text-2);
