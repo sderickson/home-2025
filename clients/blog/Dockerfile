@@ -6,8 +6,5 @@ COPY --parents ./package.json ./package-lock.json ./saflib/cron/cron-spec/packag
 RUN npm install --omit=dev
 COPY --parents ./saflib/cron/cron-spec ./saflib/dev-tools ./saflib/email/email-vue ./saflib/env ./saflib/links ./saflib/monorepo ./saflib/openapi ./saflib/sdk ./saflib/utils ./saflib/vue ./clients/blog ./
 
-# Make the documentation accessible to vitepress
-COPY ./saflib ./saflib
-
 # # Vue app setup
 WORKDIR /app/clients/blog

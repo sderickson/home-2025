@@ -1,15 +1,15 @@
 # Six Month Status Update
 
-It's been a few months since I posted about my [roadmap](/blog/2025-04-25-dx-eval-roadmap), and six months since I started work on this project to grapple with AI, so I thought I'd give a general update of how things are going, where I'm at, and where I'm headed.
+It's been a few months since I posted about my [roadmap](./2025-04-25-Roadmap.md), and six months since I started work on this project to grapple with AI, so I thought I'd give a general update of how things are going, where I'm at, and where I'm headed.
 
 ## Project Recap
 
 I'll summarize the high level goal and train of logic I'm working on:
 
-* I want to [decide for myself](/blog/2025-03-25-learned-so-far) what is the most effective and appropriate way to use AI tools in software development, both to keep up in my chosen profession and to enable myself and others to build and benefit from more of the tools and services they want.
+* I want to [decide for myself](./2025-03-25-Learned-So-Far.md) what is the most effective and appropriate way to use AI tools in software development, both to keep up in my chosen profession and to enable myself and others to build and benefit from more of the tools and services they want.
 * To figure this out, I've started a (web-based SaaS) [business](https://familycaller.com/) with a frequent cofounder of mine, so that I'm working toward and grounding on a real-world use-case.
 * A central piece of this work is my own web-app base, [SAF](https://saf-demo.online/). This serves many purposes, but in the context of this project, it is a proof-of-concept and a testing ground for how best to use AI tools, as well as a way to share my code and setup across different projects. It's open-source for anyone who wishes to use it or contribute to it.
-* After a few months of adapting to and experimenting with AI agents as part of building the business and SAF, I settled on a theory to explore: the [Theory of DX](/blog/2025-04-18-theory-of-dx). In short, I posit that what's good for human developer effectiveness (automated tests, static analysis checks, accessible interfaces, well-organized code, etc), and what's good for AI agent execution, are very much the same thing.
+* After a few months of adapting to and experimenting with AI agents as part of building the business and SAF, I settled on a theory to explore: the [Theory of DX](./2025-04-18-Theory-of-Dx.md). In short, I posit that what's good for human developer effectiveness (automated tests, static analysis checks, accessible interfaces, well-organized code, etc), and what's good for AI agent execution, are very much the same thing.
 
 Basically, I'm less focused on what AI product or model or combination thereof is most effective, and more focused on how to set up a personal or professional tech stack for effective use with *any* AI product or model. I think that's more interesting, less explored, and ultimately more valuable and generally applicable long-term than keeping up with and reviewing a motley, ever-changing assortment of products and services.
 
@@ -35,7 +35,7 @@ I spent **three months on SAF**, with a week or two each on the
   * gRPC clients and servers for communication between services
   * Email integration
   * Refactoring
-  * A custom-built AI Workflow tool (first iteration described [here](/blog/2025-05-10-workflow-first-iteration), now with a [second iteration](https://github.com/sderickson/saflib/blob/0808834897156884039fae2a3d59a0848cdcab3d/workflows/src/workflow.ts#L152) that uses [XState](https://stately.ai/docs))
+  * A custom-built AI Workflow tool (first iteration described [here](./2025-05-10-Workflow-First-Iteration.md), now with a [second iteration](https://github.com/sderickson/saflib/blob/0808834897156884039fae2a3d59a0848cdcab3d/workflows/src/workflow.ts#L152) that uses [XState](https://stately.ai/docs))
 
 And the sixth month was time off, other work.
 
@@ -92,7 +92,7 @@ Compared to the web-app framework, the workflow tool is less mature, but also wi
 * There are some key workflows missing, such as creating Playwright tests, landing a GitHub PR, adding a third-party integration, and "bootstrapping" a new product.
 * There are no [evals](https://www.evalite.dev/) set up for these workflows!
 
-Once all that's done, I'll have the three branches of my [governance](/blog/2025-06-14-Governing-Products) system in place for web development: documentation, workflows, and evals. The workflow tool will really be a separate tool from SAF, usable in any environment that includes Node or a Node-like environment. And SAF will come with workflows for projects that use it.
+Once all that's done, I'll have the three branches of my [governance](./2025-06-14-Governing-Products) system in place for web development: documentation, workflows, and evals. The workflow tool will really be a separate tool from SAF, usable in any environment that includes Node or a Node-like environment. And SAF will come with workflows for projects that use it.
 
 At this point, it should be fairly straightforward for anyone using this framework to see the same results as I do, especially if they're familiar with the technologies. I will have taken all my design decisions and processes, and made them accessible to humans and agents alike. Little will be left to guessing.
 
@@ -102,7 +102,7 @@ I'm tracking this milestone [here](https://github.com/sderickson/saflib/mileston
 
 Where all this finally comes together. As the name implies, there are two smaller milestones:
 
-1. **Optimize**. With the eval system for workflows in place, I will add evals and use them to measure and iterate on the workflows and models that run them, to try and get the [reliability](/blog/2025-04-11-Reliability) of these workflows high enough. I would like to see a success rate of at least 95% for each workflow, where the agent is able to complete the workflow the vast majority of the time without any major issues (like being untested, overly complex, or just not following the most important rules). This will drive improvements both to the workflows and also the framework.
+1. **Optimize**. With the eval system for workflows in place, I will add evals and use them to measure and iterate on the workflows and models that run them, to try and get the [reliability](./2025-04-11-Reliability.md) of these workflows high enough. I would like to see a success rate of at least 95% for each workflow, where the agent is able to complete the workflow the vast majority of the time without any major issues (like being untested, overly complex, or just not following the most important rules). This will drive improvements both to the workflows and also the framework.
 2. **Analyze**. Run and measure the workflows with and without different DX pieces. How much does the reliability (success rate) and/or efficiency (token count) change when the following are removed, reduced, or altered:
 
 * Doc review as part of the workflow

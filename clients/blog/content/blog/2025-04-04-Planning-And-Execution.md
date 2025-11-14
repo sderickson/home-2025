@@ -2,7 +2,7 @@
 
 _April 4, 2025_
 
-[Last time](/blog/2025-03-27-doc-driven-ai) I talked about one of the key things I do differently when doing a given task with AI (I use, generate, and update docs for that kind of task). This time I want to talk about how I do a series of tasks that ladder up to a feature, how to work with AI at the next highest level.
+[Last time](./2025-03-27-Doc-Driven-AI.md) I talked about one of the key things I do differently when doing a given task with AI (I use, generate, and update docs for that kind of task). This time I want to talk about how I do a series of tasks that ladder up to a feature, how to work with AI at the next highest level.
 
 For each feature now, I do a pretty consistent and industry-standard process:
 
