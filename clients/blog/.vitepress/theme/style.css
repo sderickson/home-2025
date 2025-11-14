@@ -69,6 +69,11 @@
   --vp-c-yellow-3: #9f6a00;
   --vp-c-yellow-soft: rgba(234, 179, 8, 0.14);
 
+  --vp-c-cyan-1: #0891b2;
+  --vp-c-cyan-2: #06b6d4;
+  --vp-c-cyan-3: #22d3ee;
+  --vp-c-cyan-soft: rgba(6, 182, 212, 0.14);
+
   --vp-c-red-1: #b8272c;
   --vp-c-red-2: #d5393e;
   --vp-c-red-3: #e0575b;
@@ -102,6 +107,11 @@
   --vp-c-yellow-2: #da8b17;
   --vp-c-yellow-3: #a46a0a;
   --vp-c-yellow-soft: rgba(234, 179, 8, 0.16);
+
+  --vp-c-cyan-1: #22d3ee;
+  --vp-c-cyan-2: #06b6d4;
+  --vp-c-cyan-3: #0891b2;
+  --vp-c-cyan-soft: rgba(6, 182, 212, 0.16);
 
   --vp-c-red-1: #f66f81;
   --vp-c-red-2: #f14158;
@@ -212,18 +222,18 @@
   --vp-c-default-3: var(--vp-c-gray-3);
   --vp-c-default-soft: var(--vp-c-gray-soft);
 
-  --vp-c-brand-1: var(--vp-c-indigo-1);
-  --vp-c-brand-2: var(--vp-c-indigo-2);
-  --vp-c-brand-3: var(--vp-c-indigo-3);
-  --vp-c-brand-soft: var(--vp-c-indigo-soft);
+  --vp-c-brand-1: var(--vp-c-cyan-1);
+  --vp-c-brand-2: var(--vp-c-cyan-2);
+  --vp-c-brand-3: var(--vp-c-cyan-3);
+  --vp-c-brand-soft: var(--vp-c-cyan-soft);
 
   /* DEPRECATED: Use `--vp-c-brand-1` instead. */
   --vp-c-brand: var(--vp-c-brand-1);
 
-  --vp-c-tip-1: var(--vp-c-brand-1);
-  --vp-c-tip-2: var(--vp-c-brand-2);
-  --vp-c-tip-3: var(--vp-c-brand-3);
-  --vp-c-tip-soft: var(--vp-c-brand-soft);
+  --vp-c-tip-1: var(--vp-c-yellow-1);
+  --vp-c-tip-2: var(--vp-c-yellow-2);
+  --vp-c-tip-3: var(--vp-c-yellow-3);
+  --vp-c-tip-soft: var(--vp-c-yellow-soft);
 
   --vp-c-note-1: var(--vp-c-brand-1);
   --vp-c-note-2: var(--vp-c-brand-2);
@@ -531,11 +541,31 @@
  * -------------------------------------------------------------------------- */
 
 :root {
-  --vp-home-hero-name-color: var(--vp-c-brand-1);
-  --vp-home-hero-name-background: transparent;
+  --vp-home-hero-name-color: transparent;
+  --vp-home-hero-name-background: -webkit-linear-gradient(
+    120deg,
+    var(--vp-c-cyan-2) 30%,
+    var(--vp-c-yellow-2)
+  );
 
-  --vp-home-hero-image-background-image: none;
-  --vp-home-hero-image-filter: none;
+  --vp-home-hero-image-background-image: linear-gradient(
+    -45deg,
+    var(--vp-c-cyan-2) 50%,
+    var(--vp-c-yellow-2) 50%
+  );
+  --vp-home-hero-image-filter: blur(44px);
+}
+
+@media (min-width: 640px) {
+  :root {
+    --vp-home-hero-image-filter: blur(56px);
+  }
+}
+
+@media (min-width: 960px) {
+  :root {
+    --vp-home-hero-image-filter: blur(68px);
+  }
 }
 
 /**
