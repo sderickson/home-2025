@@ -4,6 +4,6 @@ import common.Caddyfile
 	import spa /blog-client {args[0]}
 }
 
-{$PROTOCOL}://blog.{$DOMAIN} {
+{$PROTOCOL}://{$DOMAIN} {
 	import home-spa /index.html
 }
