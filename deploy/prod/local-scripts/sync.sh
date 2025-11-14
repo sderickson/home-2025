@@ -3,8 +3,8 @@
 REMOTE_HOST="root@137.184.36.178"
 REMOTE_PATH="/root"
 REMOTE_FOLDER="/root/scotterickson/"
-LOCAL_FOLDER="./deploy/instance/remote-assets"
-ZIP_NAME="deploy-instance.zip"
+LOCAL_FOLDER="./deploy/prod/remote-assets"
+ZIP_NAME="scotterickson-deploy.zip"
 
 # Create zip file
 echo "Creating zip file..."
