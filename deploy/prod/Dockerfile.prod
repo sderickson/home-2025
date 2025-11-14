@@ -1,0 +1,9 @@
+FROM blog-client:latest AS blog_builder
+
+COPY ./deploy/prod/.env.prod-local /app/.env.prod-local
+RUN npm run build
+
+FROM caddy:2.9.1
+
+COPY --from=blog_builder /app/clients/blog/.vitepress/dist /srv/blog-client
+COPY ./deploy/prod/remote-assets/config /etc/caddy/

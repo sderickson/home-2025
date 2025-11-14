@@ -4,6 +4,7 @@ services:
       file: remote-assets/docker-compose.prod.yaml
       service: caddy
     volumes: !override []
+
 volumes:
   caddy_data:
   caddy_config:

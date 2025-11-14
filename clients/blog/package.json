@@ -1,13 +1,13 @@
 {
-  "name": "doc-client",
+  "name": "blog-client",
   "version": "1.0.0",
-  "description": "Generates doc site",
+  "description": "Generates blog site",
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "docs:dev": "vitepress dev",
-    "docs:build": "vitepress build",
-    "docs:preview": "vitepress preview"
+    "dev": "vitepress dev",
+    "build": "vitepress build",
+    "preview": "vitepress preview"
   },
   "author": "",
   "license": "ISC",

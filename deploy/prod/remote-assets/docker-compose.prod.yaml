@@ -1,7 +1,5 @@
 services:
   caddy:
-    env_file:
-      - .env.prod
     cap_add:
       - NET_ADMIN
     image: ghcr.io/sderickson/scotterickson-caddy:latest
@@ -9,14 +7,13 @@ services:
       - "80:80"
       - "443:443"
       - "443:443/udp"
-    environment:
-      - DISABLE_VITE_DEV_SERVER=#
-      - DOMAIN=${DOMAIN}
-      - PROTOCOL=${PROTOCOL}
     volumes:
       - ./config:/etc/caddy/
       - caddy_data:/data
       - caddy_config:/config
+    environment:
+      - DOMAIN=${DOMAIN}
+      - PROTOCOL=${PROTOCOL}
     restart: unless-stopped
 
 volumes:

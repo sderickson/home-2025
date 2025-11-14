@@ -10,4 +10,4 @@ RUN npm install --omit=dev
 COPY ./saflib ./saflib
 
 # # Vue app setup
-WORKDIR /app/clients/docs
+WORKDIR /app/clients/blog
