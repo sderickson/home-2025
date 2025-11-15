@@ -1,9 +1,5 @@
-import common.Caddyfile
-
-(home-spa) {
-	import spa /blog-client {args[0]}
-}
+import common.Caddyfile 
 
 {$PROTOCOL}://{$DOMAIN} {
-	import home-spa /index.html
+	import spa /blog-client /index.html
 }
