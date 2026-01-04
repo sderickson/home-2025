@@ -4,15 +4,15 @@ _April 18, 2025_
 
 I have a working theory how best to set up your project for AI, and it revolves around DX: Developer Experience. My theory is that what helps engineers, tech leads, and engineering managers be efficient and productive, and what helps coding agents to be efficient and productive, are basically the same thing. So for anyone building software wanting to make the most of these new and evolving tools, they should invest in their DX.
 
-It's a working theory, so admittedly I don't have strong evidence, but I'm writing out my thoughts *so that* I have something explicit to work on. What I've seen in my own experience shows promise for these ideas, so it's worth spending the time investigating further and general consideration. Still, take what follows with a grain of salt. I'll expand on and adjust these theories as I go.
+It's a working theory, so admittedly I don't have strong evidence, but I'm writing out my thoughts _so that_ I have something explicit to work on. What I've seen in my own experience shows promise for these ideas, so it's worth spending the time investigating further and general consideration. Still, take what follows with a grain of salt. I'll expand on and adjust these theories as I go.
 
 With that disclaimer out of the way.
 
 There are several facets to DX I'm focusing on: documentation, quality metrics, interfaces, static analysis, and best practices. I'll go through each of these categories and describe:
 
-* Why it's important for humans,
-* Why it's important for agents, and
-* What I'd recommend doing/am myself doing to set things up for both
+- Why it's important for humans,
+- Why it's important for agents, and
+- What I'd recommend doing/am myself doing to set things up for both
 
 ## DX Categories
 
@@ -22,25 +22,25 @@ The codebase should have docs for all recommended folder structures, workflows, 
 
 Docs neatly fold into agentic coding workflows because prompts can simply link to the appropriate doc, or expose any and all documentation via a tool to the agent for it to look up the doc itself. The agent will spend less time thinking about how to do something and get it more right the first time, saving time and money, and reducing errors. I wrote about developing and using docs in agentic coding flows in my [Doc Driven AI](./2025-03-27-Doc-Driven-AI) blog post.
 
-This is important to focus on because I expect any 3rd party library which purports to analyze and understand your codebase automagically will not be able to do so well unless you have your own documentation. An advanced tool might be able to identify competing defacto standards, and even facilitate resolving them and help you make them actual standards by adding docs. But at some point *you* need to make choices about what tools and patterns and invariants you want and get them down somewhere both humans and agents can access and make use of them. So make sure you have a system for contributing and maintaining written documentation that's embedded in the codebase but not in the code. Preferably near or in the code module it pertains to.
+This is important to focus on because I expect any 3rd party library which purports to analyze and understand your codebase automagically will not be able to do so well unless you have your own documentation. An advanced tool might be able to identify competing defacto standards, and even facilitate resolving them and help you make them actual standards by adding docs. But at some point _you_ need to make choices about what tools and patterns and invariants you want and get them down somewhere both humans and agents can access and make use of them. So make sure you have a system for contributing and maintaining written documentation that's embedded in the codebase but not in the code. Preferably near or in the code module it pertains to.
 
 ### Quality Metrics
 
 An important tool for managing a large codebase is a set of engineering and product metrics to measure health. This includes both leading indicators and signals from production. A set might include:
 
-* Leading indicators
-    * Test coverage
-    * Build size
-    * Number of dependencies
-    * Interface complexity
-* Live signals
-    * Bug tickets
-    * Revert commits
-    * Success rates
-    * Conversion rates
-    * Response times
+- Leading indicators
+  - Test coverage
+  - Build size
+  - Number of dependencies
+  - Interface complexity
+- Live signals
+  - Bug tickets
+  - Revert commits
+  - Success rates
+  - Conversion rates
+  - Response times
 
-The important thing is these metrics be *automatically* associated with a given module or package. For example, one could imagine a system that identifies commits which fix (or attempt to fix) a bug ticket, and associate that bug with each package which has changes in the fix. None of these are perfect, but taken together they can help identify when some part of the codebase is getting too bloated and/or unstable. The reason you need this level of granularity is for accountability and ownership. If you own a set of modules, and they have dedicated metrics, you can track and be held accountable for the health of those modules.
+The important thing is these metrics be _automatically_ associated with a given module or package. For example, one could imagine a system that identifies commits which fix (or attempt to fix) a bug ticket, and associate that bug with each package which has changes in the fix. None of these are perfect, but taken together they can help identify when some part of the codebase is getting too bloated and/or unstable. The reason you need this level of granularity is for accountability and ownership. If you own a set of modules, and they have dedicated metrics, you can track and be held accountable for the health of those modules.
 
 These metrics also are an invaluable tool when much of the code is being generated. It's all too easy for agents to generate a ton of code without appropriate test coverage, install a bunch of dependencies willy-nilly, or add something that needs to be reverted because success rates plummeted. If these metrics are all green, a manager or tech lead can be reasonably certain the ship is going in the right direction. And if they're turning red, it's likely whatever other guardrails (like linters or documentation) you have in place are insufficient.
 
@@ -52,7 +52,7 @@ This is related to the above, in that it's important for the codebase to be brok
 
 For agentic coding, interfaces being accessible enables humans to pay less attention to the coding level of things. One might imagine a PR process where you skim but don't look too closely at the code portions, but you instead spend your attention on what APIs were updated, which schemas have changed, what library options have been added. You can focus on the codebase at a higher level (software design, architecture), and if any particular package becomes unstable (or is important enough to ensure it doesn't start unstable), you can dig deeper into that one. More about this in my [Reliability](./2025-04-11-Reliability) blog post, where I talk about how modular code lowers how reliable LLMs need to be to be less supervised.
 
-So, once you've got that modular unit which is necessary for quality metrics, you'll also want to make sure a public interface can be extrapolated from it. Any package should clearly define how consumers and/or end-users interact with this unit. These interfaces also need to be committed to the repo, one way or another. Some interfaces (such as npm package interfaces) need to be generated, and so that should be done as part of CI (either enforced or automated). That way you have something to review in the PR for a given interface change. Interfaces which are used *to* generate other files work as-is.
+So, once you've got that modular unit which is necessary for quality metrics, you'll also want to make sure a public interface can be extrapolated from it. Any package should clearly define how consumers and/or end-users interact with this unit. These interfaces also need to be committed to the repo, one way or another. Some interfaces (such as npm package interfaces) need to be generated, and so that should be done as part of CI (either enforced or automated). That way you have something to review in the PR for a given interface change. Interfaces which are used _to_ generate other files work as-is.
 
 ### Static Analysis
 
@@ -64,9 +64,9 @@ They're also particularly helpful when you're doing something that is uncommon. 
 
 For issues like this, I would solve it in the priority of:
 
-* A TypeScript config rule
-* A base ESLint rule
-* A custom ESLint rule
+- A TypeScript config rule
+- A base ESLint rule
+- A custom ESLint rule
 
 If you don't already have linters set up or actively maintained, set them up or dust them off and make sure they're running in the background in code editors. Developers should build or enable ones for issues they see coming up regularly from their agents or colleagues in code reviews.
 
@@ -90,13 +90,13 @@ There are some common themes above which can be deduced as important to tackle s
 
 This I consider a hard prerequisite for:
 
-* Documentation: because it's best kept in the module it pertains to
-* Quality metrics: because they should measure the quality of a module
-* Interfaces: Modules should always provide an accessible interface
+- Documentation: because it's best kept in the module it pertains to
+- Quality metrics: because they should measure the quality of a module
+- Interfaces: Modules should always provide an accessible interface
 
 If the codebase can't be broken down into small-enough modules (small enough for a team to own several), then it's harder to find the right docs for a tool or service, or understand what part of the code base is bringing down quality of the product, or what are the contracts some piece of code needs to adhere to. Even for static analysis and best practices, one could imagine scenarios where adoption of linters or the eschewing to best practices is handled and tracked module-by-module.
 
-Without a codebase which is understandably structured, either by man or machine, progress will be stymied. So it's important to decide what is your codebase's "module" and be consistent about how one accesses its interface, its docs, and *each* of your chosen metrics. If you use one language, use its standard. If you use more than one, you'll probably need a higher-level construct such as Bazel.
+Without a codebase which is understandably structured, either by man or machine, progress will be stymied. So it's important to decide what is your codebase's "module" and be consistent about how one accesses its interface, its docs, and _each_ of your chosen metrics. If you use one language, use its standard. If you use more than one, you'll probably need a higher-level construct such as Bazel.
 
 ### Decision Framework
 
