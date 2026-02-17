@@ -1,7 +1,8 @@
 # Blog Posts by Date
 
-### January 2026
+### Winter 2026
 
+- [The Bottom-Up Approach](/blog/2026-02-17-Bottom-Up)
 - [2025 Retrospective](/blog/2026-01-03-2025-Retro)
 
 ### Summer 2025
